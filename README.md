@@ -2,8 +2,9 @@
 
 ## Ubuntu 18.04 LTS DevEnv
 
-<img src="ubuntu.png">
-<img src="ohMyHyper.gif">
+<img src="ubuntu.png" />
+<img src="ohMyHyper.gif" />
+<img src="neofetch.png" />
 
 ### Upgrade Packages
 
@@ -54,6 +55,20 @@ sudo apt-get install filezilla -y
 
 ```
 sudo apt-get install shutter -y
+```
+
+### Install Stacer
+
+```
+sudo add-apt-repository ppa:oguzhaninan/stacer -y
+sudo apt-get update
+sudo apt-get install stacer -y
+```
+
+### Install Neofetch
+
+```
+sudo apt install neofetch
 ```
 
 ### Install Git
