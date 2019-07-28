@@ -145,3 +145,4 @@ source /usr/local/share/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export PATH="$PATH:$HOME/.rvm/bin"
 
 #------ ENDS ------#
+

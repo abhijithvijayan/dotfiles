@@ -168,6 +168,13 @@ cd /usr/local/share/zsh
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 ```
 
+### Fix Permissions (Critical)
+
+```
+chmod 755 /usr/local/share/zsh
+chmod 755 /usr/local/share/zsh/site-functions
+```
+
 ### Install ruby
 
 ```
@@ -211,7 +218,7 @@ mdkir ~/.config/colorls/
 touch ~/.config/colorls/dark_colors.yaml
 ```
 
-### Apply shell configuration
+### Apply shell configuration (Critical)
 
 Update config files(see dotfiles) and then run
 
