@@ -189,6 +189,12 @@ cd /usr/local/share/zsh
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 ```
 
+### Auto-Suggestion
+
+```
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
 ### Fix Permissions (Critical)
 
 ```

@@ -35,6 +35,7 @@ export ZSH="/home/${USER}/.oh-my-zsh"
 #------------------
 
 plugins=(git)
+plugins=(zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
