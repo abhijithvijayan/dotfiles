@@ -1,24 +1,29 @@
 # dotfiles
 
-## Ubuntu 18.04 Configuration
+## Ubuntu 18.04 LTS DevEnv
+
+<img src="ubuntu.png">
+<img src="ohMyHyper.gif">
+
+### Upgrade Packages
 
 ```
 sudo apt update && sudo apt upgrade
 ```
 
-## Install media codecs
+### Install media codecs
 
 ```
 sudo apt-get install ubuntu-restricted-extras
 ```
 
-## Install GDebi
+### Install GDebi
 
 ```
 sudo apt install gdebi
 ```
 
-## Use Flatpak
+### Use Flatpak
 
 ```
 sudo apt install flatpak
@@ -26,68 +31,68 @@ sudo apt install gnome-software-plugin-flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
 
-## Install GNOME Tweaks
+### Install GNOME Tweaks
 
 ```
 sudo apt install gnome-tweak-tool -y
 ```
 
-## Enable and Start Firewall(ufw) to Enhance Security
+### Enable and Start Firewall(ufw) to Enhance Security
 
 ```
 sudo ufw enable
 ```
 
-## Prolong your battery and prevent overheating
+### Prolong battery life and prevent overheating
 
 ```
 sudo apt install tlp tlp-rdw
 sudo tlp start
 ```
 
-## Install synaptic
+### Install synaptic
 
 ```
 sudo apt-get install synaptic -y
 ```
 
-## Install VLC
+### Install VLC
 
 ```
 sudo apt-get install vlc -y
 ```
 
-## Install Filezilla
+### Install Filezilla
 
 ```
 sudo apt-get install filezilla -y
 ```
 
-## Install Shutter
+### Install Shutter
 
 ```
 sudo apt-get install shutter -y
 ```
 
-## Install Git
+### Install Git
 
 ```
 sudo apt-get install git
 ```
 
-## Install curl
+### Install curl
 
 ```
 sudo apt install curl
 ```
 
-## Install nvm
+### Install nvm
 
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 ```
 
-## Install yarn
+### Install yarn
 
 ```
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
@@ -95,13 +100,13 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 sudo apt-get update && sudo apt-get install --no-install-recommends yarn
 ```
 
-## Install brew
+### Install brew
 
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-## Install ZSH
+### Install ZSH
 
 ```
 brew install zsh
@@ -109,13 +114,13 @@ sudo apt install zsh
 chsh -s /bin/zsh
 ```
 
-## Install oh-my-zsh
+### Install oh-my-zsh
 
 ```
 sh -c "$(wget -O- https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
-## Spaceship-prompt
+### Spaceship-prompt
 
 ```
 npm install -g spaceship-prompt
@@ -125,7 +130,7 @@ git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/theme
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 ```
 
-## Syntax-Highlighting
+### Syntax-Highlighting
 
 https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
 
@@ -136,25 +141,25 @@ cd /usr/local/share/zsh
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 ```
 
-## Install ruby
+### Install ruby
 
 ```
 sudo apt install ruby-full -y
 ```
 
-## Install powerline-fonts
+### Install powerline-fonts
 
 ```
 sudo apt-get install fonts-powerline -y
 ```
 
-## Instal fonts manager
+### Instal fonts manager
 
 ```
 sudo apt update && sudo apt -y install font-manager
 ```
 
-## Install Meslo patched font
+### Install Meslo patched font
 
 Download zip from latest release
 https://github.com/ryanoasis/nerd-fonts/releases/latest
@@ -167,7 +172,7 @@ unzip Meslo.zip
 sudo fc-cache -f -v
 ```
 
-## Install Colorls
+### Install Colorls
 
 https://github.com/athityakumar/colorls#installation
 
@@ -177,25 +182,17 @@ mdkir ~/.config/colorls/
 nano ~/.config/colorls/dark_colors.yaml
 ```
 
-## Eslint
+### Eslint
 
 ```
 npx install-peerdeps --global eslint-config-onepass
 ```
 
 ```
-nano ~/.eslintrc
+touch ~/.eslintrc
 ```
 
-```
-{
-  "extends": [
-    "onepass"
-  ]
-}
-```
-
-## Lib-input Gestures
+### Lib-input Gestures
 
 https://github.com/bulletmark/libinput-gestures
 
@@ -224,15 +221,21 @@ mkdir ~/.themes
 mkdir ~/.icons
 ```
 
-Download & extract latest tar
+Download & extract latest ta
 
 Move the extracted folder to `~/.themes`
 
-open `GNOME Tweak Tool > Appearance` and select the theme
+open `GNOME Tweak Tool > Appearance` and select the them
 
-#### Firefox Theme
+### Firefox Theme
 
 https://github.com/vinceliuice/Mojave-gtk-theme/tree/master/src/firefox
+
+### MacUbuntu Wallpapers
+
+http://drive.noobslab.com/data/Mac/MacBuntu-Wallpapers.zip
+
+Extact and keep it into picture folder.
 
 ### La Capitaine Icon Set
 
@@ -269,7 +272,7 @@ or
 
 https://micheleg.github.io/dash-to-dock/releases.html
 
-### Find installation instructions at:
+#### Find installation instructions at:
 
 https://micheleg.github.io/dash-to-dock/download.html
 
@@ -284,3 +287,5 @@ A Shell reload is required
 `Enter` and the extension has to be enabled with `gnome-tweak-tool`
 
 Set Dash background to `white` and transparency to `60%`
+
+<hr />
