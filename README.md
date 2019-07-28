@@ -28,32 +28,14 @@ sudo apt install gdebi
 ```
 sudo apt install flatpak
 sudo apt install gnome-software-plugin-flatpak
+
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
 
-### Install GNOME Tweaks
-
-```
-sudo apt install gnome-tweak-tool -y
-```
-
-### Enable and Start Firewall(ufw) to Enhance Security
+### Enable and Start Firewall(ufw)
 
 ```
 sudo ufw enable
-```
-
-### Prolong battery life and prevent overheating
-
-```
-sudo apt install tlp tlp-rdw
-sudo tlp start
-```
-
-### Install synaptic
-
-```
-sudo apt-get install synaptic -y
 ```
 
 ### Install VLC
@@ -77,7 +59,7 @@ sudo apt-get install shutter -y
 ### Install Git
 
 ```
-sudo apt-get install git
+sudo apt-get install git -y
 ```
 
 ### Install curl
@@ -97,7 +79,53 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 ```
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+
 sudo apt-get update && sudo apt-get install --no-install-recommends yarn
+```
+
+### Eslint
+
+```
+npx install-peerdeps --global eslint-config-onepass
+```
+
+```
+# See eslintrc dotfile for config
+touch ~/.eslintrc
+```
+
+### Prolong battery life and prevent overheating
+
+```
+sudo apt install tlp tlp-rdw
+sudo tlp start
+```
+
+### Install synaptic
+
+```
+sudo apt-get install synaptic -y
+```
+
+### Lib-input Gestures
+
+https://github.com/bulletmark/libinput-gestures
+
+```
+sudo gpasswd -a $USER input
+sudo apt-get install xdotool wmctrl
+sudo apt-get install libinput-tools
+```
+
+## Customize Terminal & Shell
+
+### Install Hyper.js
+
+Download from :
+https://hyper.is/
+
+```
+# See hyper.js dotfile for config
 ```
 
 ### Install brew
@@ -111,6 +139,11 @@ sudo apt-get update && sudo apt-get install --no-install-recommends yarn
 ```
 brew install zsh
 sudo apt install zsh
+```
+
+Set ZSH as default shell
+
+```
 chsh -s /bin/zsh
 ```
 
@@ -118,6 +151,10 @@ chsh -s /bin/zsh
 
 ```
 sh -c "$(wget -O- https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+
+```
+# See zshrc, profile, bashrc, bash_profile dotfiles file for config
 ```
 
 ### Spaceship-prompt
@@ -153,7 +190,7 @@ sudo apt install ruby-full -y
 sudo apt-get install fonts-powerline -y
 ```
 
-### Instal fonts manager
+### Install fonts manager
 
 ```
 sudo apt update && sudo apt -y install font-manager
@@ -179,32 +216,28 @@ https://github.com/athityakumar/colorls#installation
 ```
 sudo gem install colorls -y
 mdkir ~/.config/colorls/
-nano ~/.config/colorls/dark_colors.yaml
+
+# See dark_colors.yaml for config
+touch ~/.config/colorls/dark_colors.yaml
 ```
 
-### Eslint
+### Apply configuration
+
+Update config files(see dotfiles) and then run
 
 ```
-npx install-peerdeps --global eslint-config-onepass
-```
-
-```
-touch ~/.eslintrc
-```
-
-### Lib-input Gestures
-
-https://github.com/bulletmark/libinput-gestures
-
-```
-sudo gpasswd -a $USER input
-sudo apt-get install xdotool wmctrl
-sudo apt-get install libinput-tools
+source ~/.bash_profile
 ```
 
 <hr />
 
 ## Mac-OS like Customisation
+
+### Install GNOME Tweaks
+
+```
+sudo apt install gnome-tweak-tool -y
+```
 
 ### McMojave Theme
 
@@ -221,7 +254,7 @@ mkdir ~/.themes
 mkdir ~/.icons
 ```
 
-Download & extract latest ta
+Download & extract latest tar
 
 Move the extracted folder to `~/.themes`
 
@@ -264,7 +297,7 @@ Head to `GNOME Tweak Tool > Fonts` and set the `Windows Titles and Interface` fo
 
 Go to `Settings > Details > About` and find GNOME shell version
 
-and download accordingly from :
+and download supported version from :
 
 https://extensions.gnome.org/extension/307/dash-to-dock/
 
@@ -276,7 +309,11 @@ https://micheleg.github.io/dash-to-dock/releases.html
 
 https://micheleg.github.io/dash-to-dock/download.html
 
-Extract the archive in the a directory named `dash-to-dock@micxgx.gmail.com` inside `~/.local/share/gnome-shell/extensions/`
+```
+mkdir dash-to-dock@micxgx.gmail.com
+```
+
+Extract the archive contents to this directory, and move the folder to `~/.local/share/gnome-shell/extensions/`
 
 A Shell reload is required
 
@@ -284,7 +321,9 @@ A Shell reload is required
 
 `r`
 
-`Enter` and the extension has to be enabled with `gnome-tweak-tool`
+`Enter`
+
+Enable the extension with `gnome-tweak-tool > Extensions`
 
 Set Dash background to `white` and transparency to `60%`
 

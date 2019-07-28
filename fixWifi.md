@@ -102,5 +102,3 @@ sudo apt install btrtl-rtl8723de-dkms
 **REBOOT**
 
 Follow these only if your wireless card is Realtek rtl8273de.
-
-Check out this [repo](https://github.com/lwfinger/rtlwifi_new) if your card is new and different
