@@ -1,6 +1,7 @@
+
 # dotfiles
 
-## Ubuntu 18.04 Configuration & Setup
+## Ubuntu 18.04 Configuration
 
 ```
 sudo apt update && sudo apt upgrade
@@ -176,3 +177,77 @@ sudo gpasswd -a $USER input
 sudo apt-get install xdotool wmctrl
 sudo apt-get install libinput-tools
 ```
+
+<hr />
+
+## Mac-OS like Customisation
+
+### McMojave Theme
+
+https://www.gnome-look.org/p/1275087/
+
+https://github.com/vinceliuice/Mojave-gtk-theme
+
+### GTK2 engines
+
+```
+sudo apt-get install gtk2-engines-murrine gtk2-engines-pixbuf
+
+mkdir ~/.themes
+mkdir ~/.icons
+```
+
+Download & extract latest tar
+
+Move the extracted folder to `~/.themes`
+
+open `GNOME Tweak Tool > Appearance` and select the theme
+
+### La Capitaine Icon Set
+
+https://github.com/keeferrourke/la-capitaine-icon-theme/releases
+
+```
+cd ~/.icons
+git clone https://github.com/keeferrourke/la-capitaine-icon-theme.git
+```
+A Shell reload is required 
+
+`Alt+F2` 
+
+`r`
+
+`Enter` 
+
+and then open `GNOME Tweak Tool > Appearance` and select the icons
+
+### Change the System Font
+
+Head to `GNOME Tweak Tool > Fonts` and set the `Windows Titles and Interface` fonts to `Garuda Regular`.
+
+### Add Desktop Dock
+
+Go to `Settings > Details > About` and find GNOME shell version
+
+and download accordingly from :
+
+https://extensions.gnome.org/extension/307/dash-to-dock/
+
+or
+
+https://micheleg.github.io/dash-to-dock/releases.html
+
+### Find installation instructions at: 
+https://micheleg.github.io/dash-to-dock/download.html
+
+Extract the archive in the a directory named `dash-to-dock@micxgx.gmail.com` inside `~/.local/share/gnome-shell/extensions/`
+
+A Shell reload is required 
+
+`Alt+F2` 
+
+`r`
+
+`Enter` and the extension has to be enabled with `gnome-tweak-tool`
+
+Set Dash background to `white` and transparency to `60%`
