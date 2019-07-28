@@ -11,7 +11,7 @@
   "cosmosDB.showSavePrompt": false,
   "debug.console.fontSize": 15,
   "editor.colorDecorators": false,
-  "editor.cursorWidth": 5,
+  "editor.cursorWidth": 3,
   "editor.cursorStyle": "line",
   "editor.fontSize": 16,
   "editor.fontWeight": "400",

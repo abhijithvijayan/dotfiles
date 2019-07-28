@@ -1,4 +1,4 @@
-<img src="vscode.png" />
+<img src="screenshots/vscode.png" />
 
 #### Here are a list of all the vscode-extensions I use.
 
