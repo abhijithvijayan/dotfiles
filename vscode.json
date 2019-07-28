@@ -1,0 +1,52 @@
+{
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false
+  },
+  "cosmosDB.showSavePrompt": false,
+  "debug.console.fontSize": 15,
+  "editor.colorDecorators": false,
+  "editor.cursorWidth": 5,
+  "editor.cursorStyle": "line",
+  "editor.fontSize": 16,
+  "editor.fontWeight": "400",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.letterSpacing": 0.5,
+  "editor.quickSuggestionsDelay": 30,
+  "editor.suggestSelection": "first",
+  "editor.minimap.showSlider": "always",
+  "editor.tabCompletion": "on",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
+  "eslint.autoFixOnSave": true,
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "prettier.disableLanguages": ["javascript", "javascriptreact"],
+  "sync.gist": "29b4a8efd7dcf184dbab68e984d2f6d3",
+  "terminal.integrated.fontFamily": "'MesloLGMDZ Nerd Font', monospace",
+  "terminal.integrated.rendererType": "dom",
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\sysnative\\bash.exe",
+  "window.zoomLevel": 2,
+  "workbench.colorTheme": "Material Theme Ocean High Contrast",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.sideBar.location": "left",
+  "workbench.startupEditor": "newUntitledFile",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorCustomizations": {},
+  "window.titleBarStyle": "custom",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "git.confirmSync": false
+}
