@@ -6,12 +6,6 @@
 sudo apt install xserver-xorg-input-synaptics
 ```
 
-### Install synaptic
-
-```
-sudo apt-get install synaptic -y
-```
-
 ### Lib-input Gestures
 
 https://github.com/bulletmark/libinput-gestures
