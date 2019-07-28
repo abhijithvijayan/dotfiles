@@ -101,22 +101,6 @@ sudo apt install tlp tlp-rdw
 sudo tlp start
 ```
 
-### Install synaptic
-
-```
-sudo apt-get install synaptic -y
-```
-
-### Lib-input Gestures
-
-https://github.com/bulletmark/libinput-gestures
-
-```
-sudo gpasswd -a $USER input
-sudo apt-get install xdotool wmctrl
-sudo apt-get install libinput-tools
-```
-
 ## Customize Terminal & Shell
 
 ### Install Hyper.js
