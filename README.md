@@ -83,7 +83,7 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 sudo apt-get update && sudo apt-get install --no-install-recommends yarn
 ```
 
-### Eslint
+### Eslint Config
 
 ```
 npx install-peerdeps --global eslint-config-onepass
@@ -182,7 +182,7 @@ sudo apt update && sudo apt -y install font-manager
 
 ### Install Meslo patched font
 
-Download zip from latest release
+Download zip from latest release:
 https://github.com/ryanoasis/nerd-fonts/releases/latest
 
 ```
@@ -205,7 +205,7 @@ mdkir ~/.config/colorls/
 touch ~/.config/colorls/dark_colors.yaml
 ```
 
-### Apply configuration
+### Apply shell configuration
 
 Update config files(see dotfiles) and then run
 
@@ -275,7 +275,7 @@ and then open `GNOME Tweak Tool > Appearance` and select the icons
 
 ### Change the System Font
 
-Head to `GNOME Tweak Tool > Fonts` and set the `Windows Titles and Interface` fonts to `Garuda Regular`.
+Head to `GNOME Tweak Tool > Fonts` and set the `Windows Title` and `Interface` fonts to `Garuda Regular`.
 
 ### Add Desktop Dock
 
