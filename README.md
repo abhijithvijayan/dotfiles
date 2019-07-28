@@ -168,6 +168,8 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/maste
 # See zshrc, profile, bashrc, bash_profile dotfiles file for config
 ```
 
+<hr />
+
 ### Spaceship-prompt
 
 ```
@@ -177,6 +179,22 @@ git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/theme
 
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 ```
+
+OR
+
+### Pure-prompt (Not so good with icons)
+
+```
+npm install -g pure-prompt
+
+git clone https://github.com/sindresorhus/pure.git "$ZSH_CUSTOM/themes/pure-prompt"
+
+ln -s "$ZSH_CUSTOM/themes/pure-prompt/pure.zsh" "$HOME/.zfunctions/prompt_pure_setup"
+ln -s "$ZSH_CUSTOM/themes/pure-prompt/async.zsh" "$HOME/.zfunctions/async"
+
+```
+
+<hr />
 
 ### Syntax-Highlighting
 
@@ -198,8 +216,8 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 ### Fix Permissions (Critical)
 
 ```
-chmod 755 /usr/local/share/zsh
-chmod 755 /usr/local/share/zsh/site-functions
+sudo chmod 755 /usr/local/share/zsh
+sudo chmod 755 /usr/local/share/zsh/site-functions
 ```
 
 ### Install ruby
