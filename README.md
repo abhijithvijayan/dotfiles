@@ -168,6 +168,14 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/maste
 # See zshrc, profile, bashrc, bash_profile dotfiles file for config
 ```
 
+### Fix Permissions (Critical)
+
+```
+sudo chown -R $USER /usr/local
+sudo chmod 755 /usr/local/share/zsh
+sudo chmod 755 /usr/local/share/zsh/site-functions
+```
+
 <hr />
 
 ### Spaceship-prompt
@@ -180,6 +188,7 @@ git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/theme
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 ```
 
+<!--
 OR
 
 ### Pure-prompt (Not so good with icons)
@@ -192,7 +201,7 @@ git clone https://github.com/sindresorhus/pure.git "$ZSH_CUSTOM/themes/pure-prom
 ln -s "$ZSH_CUSTOM/themes/pure-prompt/pure.zsh" "$HOME/.zfunctions/prompt_pure_setup"
 ln -s "$ZSH_CUSTOM/themes/pure-prompt/async.zsh" "$HOME/.zfunctions/async"
 
-```
+``` -->
 
 <hr />
 
@@ -211,13 +220,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 
 ```
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-```
-
-### Fix Permissions (Critical)
-
-```
-sudo chmod 755 /usr/local/share/zsh
-sudo chmod 755 /usr/local/share/zsh/site-functions
 ```
 
 ### Install ruby
@@ -245,8 +247,7 @@ https://github.com/ryanoasis/nerd-fonts/releases/latest
 
 ```
 mkdir -p ~/.local/share/fonts
-cd ~/.local/share/fonts
-unzip Meslo.zip
+unzip "Meslo.zip" "*.ttf" "*.otf" -d ~/.local/share/fonts
 
 sudo fc-cache -f -v
 ```
