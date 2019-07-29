@@ -2,8 +2,8 @@
 
 ## Ubuntu 18.04 LTS DevEnv
 
-<img src="screenshots/ubuntu.png" />
-<img src="screenshots/ohMyHyper.gif" />
+<img src="screenshots/desktop.png" />
+<img src="screenshots/ohMyHyper.png" />
 <img src="screenshots/neofetch.png" />
 
 ### Upgrade Packages
