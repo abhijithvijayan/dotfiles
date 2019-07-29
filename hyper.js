@@ -11,11 +11,10 @@ module.exports = {
         // default font size in pixels for all tabs
         fontSize: 16,
   
-        // https://github.com/ryanoasis/nerd-fonts/releases/latest
         // font family with optional fallbacks.
-        // fontFamily: '"MesloLGMDZ Nerd Font", monospace',
-        fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
-        // fontFamily: '"Terminess Powerline", "Anonymice Powerline", "Roboto Mono for Powerline", "Meslo LG S for Powerline", "DejaVu Sans Mono", "Lucida Console", monospace',
+        // https://github.com/ryanoasis/nerd-fonts/releases/latest
+        fontFamily: '"MesloLGMDZ Nerd Font", monospace',
+        // fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
   
         // default font weight: 'normal' or 'bold'
         fontWeight: 'normal',
