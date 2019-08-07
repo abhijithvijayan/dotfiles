@@ -6,6 +6,10 @@
 <img src="screenshots/ohMyHyper.png" />
 <img src="screenshots/neofetch.png" />
 
+### VSCODE
+
+See what extensions I use for VSCODE [here](https://github.com/abhijithvijayan/dotfiles/blob/master/vs-code-extensions-i-use.md)
+
 ### Upgrade Packages
 
 ```
