@@ -23,6 +23,7 @@
 - [IntelliSense for CSS class names in HTML](https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion)
 - [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
 - [JS Refactor](https://marketplace.visualstudio.com/items?itemName=cmstead.jsrefactor)
+- [Lex Flex Yacc Bison](https://marketplace.visualstudio.com/items?itemName=faustinoaq.lex-flex-yacc-bison)
 - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 - [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
 - [Lorem ipsum](https://marketplace.visualstudio.com/items?itemName=Tyriar.lorem-ipsum)
