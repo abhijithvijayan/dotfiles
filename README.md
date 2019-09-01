@@ -87,6 +87,30 @@ sudo apt install neofetch
 sudo apt-get install git -y
 ```
 
+### Install OpenJDK
+
+```
+sudo apt-get install openjdk-8-jdk
+```
+
+### Install CPU Checker
+
+```
+sudo apt-get install cpu-checker
+```
+
+### Install [KVM](https://help.ubuntu.com/community/KVM/Installation)
+
+```
+sudo apt install qemu qemu-kvm libvirt-bin  bridge-utils  virt-manager
+
+sudo service libvirtd start
+
+sudo update-rc.d libvirtd enable
+
+sudo adduser [username] libvirtd
+```
+
 ### Install curl
 
 ```
@@ -117,13 +141,6 @@ npx install-peerdeps --global eslint-config-onepass
 ```
 # See eslintrc dotfile for config
 touch ~/.eslintrc
-```
-
-### Prolong battery life and prevent overheating
-
-```
-sudo apt install tlp tlp-rdw
-sudo tlp start
 ```
 
 ## Customize Terminal & Shell

@@ -15,7 +15,7 @@ sudo apt-get install linux-headers-generic build-essential git libelf-dev
 Clone the driver collection repo
 
 ```
-git clone https://github.com/lwfinger/rtlwifi_new.git
+git clone -b extended https://github.com/lwfinger/rtlwifi_new.git
 ```
 
 ```
@@ -23,7 +23,7 @@ cd rtlwifi_new
 ```
 
 ```
-git checkout origin/extended -b extended
+make
 ```
 
 ```
