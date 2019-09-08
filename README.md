@@ -108,7 +108,9 @@ sudo service libvirtd start
 
 sudo update-rc.d libvirtd enable
 
-sudo adduser [username] libvirtd
+sudo adduser <username> kvm
+
+sudo chown <username> -R /dev/kvm
 ```
 
 ### Install curl
