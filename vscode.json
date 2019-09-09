@@ -8,8 +8,12 @@
   "[javascriptreact]": {
     "editor.formatOnSave": false
   },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "cosmosDB.showSavePrompt": false,
   "debug.console.fontSize": 15,
+  "diffEditor.ignoreTrimWhitespace": false,
   "editor.colorDecorators": false,
   "editor.cursorWidth": 3,
   "editor.cursorStyle": "line",
@@ -30,23 +34,21 @@
   "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
   "eslint.autoFixOnSave": true,
   "git.autofetch": true,
+  "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "liveServer.settings.donotShowInfoMsg": true,
   "prettier.disableLanguages": ["javascript", "javascriptreact"],
+  "sync.forceUpload": true,
   "sync.gist": "29b4a8efd7dcf184dbab68e984d2f6d3",
   "terminal.integrated.fontFamily": "'MesloLGMDZ Nerd Font', monospace",
   "terminal.integrated.rendererType": "dom",
   "terminal.integrated.shell.windows": "C:\\WINDOWS\\sysnative\\bash.exe",
+  "window.titleBarStyle": "custom",
   "window.zoomLevel": 2,
+  "workbench.colorCustomizations": {},
   "workbench.colorTheme": "Material Theme Ocean High Contrast",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.sideBar.location": "left",
-  "workbench.startupEditor": "newUntitledFile",
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "workbench.colorCustomizations": {},
-  "window.titleBarStyle": "custom",
-  "diffEditor.ignoreTrimWhitespace": false,
-  "git.confirmSync": false
+  "workbench.startupEditor": "newUntitledFile"
 }
