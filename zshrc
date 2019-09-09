@@ -123,10 +123,10 @@ grbic() { git rebase -i "$1"; }
 # Open .zshrc to be edited in VS Code
 alias config="code ~/.zshrc"
 # Re-run source command on .zshrc to update current terminal session with new settings
-alias update="source ~/.zshrc"
+alias update="source ~/.bash_profile"
 # View files/folder alias using colorsls (https://github.com/athityakumar/colorls)
-alias l='colorls'
-alias ls='colorls --group-directories-first --almost-all'
+alias l='colorls --group-directories-first --almost-all'
+alias ls='colorls'
 alias ll='colorls --group-directories-first --almost-all --long'
 # Clear terminal
 alias c='clear'
@@ -149,4 +149,3 @@ source /usr/local/share/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export PATH="$PATH:$HOME/.rvm/bin"
 
 #------ ENDS ------#
-

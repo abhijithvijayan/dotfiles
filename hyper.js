@@ -4,8 +4,6 @@
 
 module.exports = {
     config: {
-        // choose either `'stable'` for receiving highly polished,
-        // or `'canary'` for less polished but more frequent updates
         updateChannel: 'stable',
 
         // default font size in pixels for all tabs
