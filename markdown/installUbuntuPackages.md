@@ -139,3 +139,14 @@ npx install-peerdeps --global eslint-config-onepass
 # See eslintrc dotfile for config
 touch ~/.eslintrc
 ```
+
+### Install grub-customizer
+
+```
+sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+```
+
+```
+sudo apt-get update
+sudo apt-get install grub-customizer
+```
