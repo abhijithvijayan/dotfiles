@@ -20,6 +20,8 @@ export ANDROID_HOME=$HOME/Android/Sdk
 # PATH Manipulations
 #------------------
 
+# Flutter
+export PATH="$PATH:$HOME/flutter/bin"
 # Android Studio
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
@@ -30,8 +32,6 @@ export PATH=$PATH:/usr/local/share/
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/${USER}/.oh-my-zsh"
-# Theme to load
-# ZSH_THEME="powerlevel9k/powerlevel9k"
 
 #------------------
 # Zsh hooks
