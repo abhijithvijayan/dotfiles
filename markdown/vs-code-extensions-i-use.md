@@ -1,4 +1,4 @@
-<img src="screenshots/vscode.png" />
+<img src="../screenshots/vscode.png" />
 
 #### Here are a list of all the vscode-extensions I use.
 
@@ -32,10 +32,12 @@
 - [npm](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script)
 - [npm Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense)
 - [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
+- [Peacock](https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock)
 - [Polacode](https://marketplace.visualstudio.com/items?itemName=pnp.polacode)
 - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager)
 - [Rainbow CSV](https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv)
+- [React-Native/React/Redux snippets for es6/es7](https://marketplace.visualstudio.com/items?itemName=EQuimper.react-native-react-redux)
 - [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
 - [styled-components-snippets](https://marketplace.visualstudio.com/items?itemName=jonkwheeler.styled-components-snippets)
 - [Version Lens](https://marketplace.visualstudio.com/items?itemName=pflannery.vscode-versionlens)
