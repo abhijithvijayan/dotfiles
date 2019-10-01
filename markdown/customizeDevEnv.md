@@ -244,4 +244,40 @@ Enable the extension with `gnome-tweak-tool > Extensions`
 
 Set Dash background to `white` and transparency to `60%`
 
+#### Note: Disable Ubuntu Dock from `gnome-tweak-tool > Extensions`
+
+### Install User Themes for Shell
+
+Download supported version from :
+
+https://extensions.gnome.org/extension/19/user-themes/
+
+```
+mkdir user-theme@gnome-shell-extensions.gcampax.github.com
+```
+
+Extract the archive contents to this directory, and move the folder to `~/.local/share/gnome-shell/extensions/`
+
+A Shell reload is required
+
+After that, enable the extension with `gnome-tweak-tool > Extensions`
+
+Another Shell reload is required
+
+### Add NetSpeed
+
+Download from
+
+https://extensions.gnome.org/extension/104/netspeed/
+
+```
+mkdir netspeed@hedayaty.gmail.com
+```
+
+Extract the archive contents to this directory, and move the folder to `~/.local/share/gnome-shell/extensions/`
+
+A Shell reload is required
+
+After that, enable the extension with `gnome-tweak-tool > Extensions`
+
 <hr />
