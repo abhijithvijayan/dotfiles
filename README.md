@@ -6,7 +6,7 @@ You may reference them and I suggest not to copy them directly coz it may / may-
 
 ## Ubuntu 18.04 LTS DevEnv
 
-<img src="screenshots/desktop.png" />
+<img src="screenshots/home.png" />
 <img src="screenshots/ohMyHyper.png" />
 <img src="screenshots/neofetch.png" />
 

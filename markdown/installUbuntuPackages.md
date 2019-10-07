@@ -156,3 +156,9 @@ sudo apt-get install grub-customizer
 ```
 sudo apt-get install tree
 ```
+
+### Install PostMan
+
+```
+sudo snap install postman
+```
