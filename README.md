@@ -22,6 +22,8 @@ My main editor of choice is [VS Code](https://github.com/Microsoft/vscode).
 
 Configs I use for it can be seen [here](vscode/). And [here](vscode/vs-code-extensions) is a list of extensions I use.
 
+![VSCODE](screenshots/vscode.png)
+
 ## Mac-Ubuntu
 
 <img src="screenshots/home.png" />

@@ -1,5 +1,3 @@
-<img src="../screenshots/vscode.png" />
-
 #### Here are a list of all the vscode-extensions I use.
 
 - [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)

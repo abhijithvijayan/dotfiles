@@ -60,17 +60,12 @@ module.exports = {
         // default: `true` on Linux, `true` on Windows, ignored on macOS
         showHamburgerMenu: false,
 
-        // set to `false` (without backticks and without quotes) if you want to hide the minimize, maximize and close buttons
         // additionally, set to `'left'` if you want them on the left, like in Ubuntu
-        // default: `true` (without backticks and without quotes) on Windows and Linux, ignored on macOS
         showWindowControls: true,
 
         // custom padding (CSS format, i.e.: `top right bottom left`)
         padding: '12px 14px',
 
-        // the full list. if you're going to provide the full color palette,
-        // including the 6 x 6 color cubes and the grayscale map, just provide
-        // an array here instead of a color map object
         colors: {
             black: '#000000',
             red: '#ff0000',
@@ -90,41 +85,34 @@ module.exports = {
             lightWhite: '#ffffff',
         },
 
-        // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
+        // the shell to run when spawning a new session 
         // if left empty, your system's login shell will be used by default
         shell: '/usr/bin/zsh',
 
-        // for setting shell arguments (i.e. for using interactive shellArgs: ['-i'])
-        // by default ['--login'] will be used
+        // for setting shell arguments 
         shellArgs: ['--login'],
 
         // for environment variables
         env: {},
 
-        // if `true` (without backticks and without quotes), selected text will automatically be copied to the clipboard
+        // if `true` selected text will automatically be copied to the clipboard
         copyOnSelect: false,
 
-        // if `true` (without backticks and without quotes), hyper will be set as the default protocol client for SSH
+        // if `true` hyper will be set as the default protocol client for SSH
         defaultSSHApp: true,
 
-        // if `true` (without backticks and without quotes), on right click selected text will be copied or pasted if no
-        // selection is present (`true` by default on Windows and disables the context menu feature)
+        // if `true` on right click selected text will be copied or pasted if no
+        // selection is present
         quickEdit: false,
 
         // The number of rows to be persisted in terminal buffer for scrolling
         scrollback: 10000,
 
-        // Whether to use the WebGL renderer. Set it to false to use canvas-based
-        // rendering (slower, but supports transparent backgrounds)
+        // Whether to use the WebGL renderer.
         webGLRenderer: true,
     },
 
     // a list of plugins to fetch and install from npm
-    // format: [@org/]project[#version]
-    // examples:
-    //   `hyperpower`
-    //   `@company/project`
-    //   `project#1.0.1`
     plugins: [
         // 'hyperminimal',
         'hyper-sierra',
