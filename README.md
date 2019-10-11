@@ -1,24 +1,42 @@
-# dotfiles
+# My configuration files for Ubuntu
 
-These are my custom config settings for different apps/editors/etc that suits my development environment.
+> Zsh, VS Code, Hyper
+
+![system-info](screenshots/neofetch.png)
+
+These are my custom config settings for different apps/editors/etc that I use in my development environment.
 
 You may reference them and I suggest not to copy them directly coz it may / may-not break stuff(s).
 
-## Ubuntu 18.04 LTS DevEnv
+#### Contents
+
+- [VS Code](#vs-code)
+- [Mac-Ubuntu](#mac-ubuntu)
+- [Zsh](#zsh)
+  - [Aliases and functions](#aliases-and-functions)
+- [Hyper](#hyper)
+
+## VS Code
+
+My main editor of choice is [VS Code](https://github.com/Microsoft/vscode).
+
+Configs I use for it can be seen [here](vscode/). And [here](vscode/vs-code-extensions) is a list of extensions I use.
+
+## Mac-Ubuntu
 
 <img src="screenshots/home.png" />
-<img src="screenshots/ohMyHyper.png" />
-<img src="screenshots/neofetch.png" />
-
-### VSCODE
-
-Install extensions I use for VSCODE [here](markdown/vs-code-extensions-i-use.md)
 
 ### Ubuntu Packages
 
 Follow instructions [here](markdown/installUbuntuPackages.md)
 
-### Customize Terminal, Shell & Gnome
+## Zsh
+
+I am using [Zsh](http://www.zsh.org) as my shell and [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) to install all my Zsh plugins.
+
+## Hyper
+
+![Hyper](screenshots/ohMyHyper.png)
 
 Setup the development environment using [instructions](markdown/customizeDevEnv.md)
 
