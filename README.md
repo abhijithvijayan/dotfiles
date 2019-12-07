@@ -1,6 +1,6 @@
 # My configuration files for Ubuntu
 
-> Zsh, VS Code, Hyper
+> Zsh, VS Code, Sublime, Hyper
 
 ![system-info](screenshots/neofetch.png)
 
@@ -11,6 +11,7 @@ You may reference them and I suggest not to copy them directly coz it may / may-
 #### Contents
 
 - [VS Code](#vs-code)
+- [Sublime Text](#sublime-text)
 - [Mac-Ubuntu](#mac-ubuntu)
 - [Zsh](#zsh)
   - [Aliases and functions](#aliases-and-functions)
@@ -23,6 +24,10 @@ My main editor of choice is [VS Code](https://github.com/Microsoft/vscode).
 Configs I use for it can be seen [here](vscode/). And [here](vscode/vs-code-extensions) is a list of extensions I use.
 
 ![VSCODE](screenshots/vscode.png)
+
+## Sublime Text
+
+I use Sublime (coz you know Gedit 🤣) with [Ayu theme](https://github.com/dempfi/ayu) for quick file edits
 
 ## Mac-Ubuntu
 
@@ -46,7 +51,7 @@ Setup the development environment using [instructions](markdown/customizeDevEnv.
 
 See the list [here](markdown/browser-extensions-i-use.md)
 
-### Fixes (Specifically for HP-BS180TX)
+### For HP Notebook 15-BS180TX
 
 - [Battery drain](markdown/fixBatteryDrain.md)
 - [Dual boot time](markdown/fixDualBootTime.md)
@@ -55,3 +60,7 @@ See the list [here](markdown/browser-extensions-i-use.md)
 - [Shutdown Loop](markdown/fixShutdownLoop.md)
 - [Ubuntu Sources Issue](markdown/fixUbuntuSources.md)
 - [WiFi & bluetooth](markdown/fixWifiAndBluetooth.md)
+
+## Thank you
+
+You can follow me on Twitter [![Twitter](http://bit.ly/2OYInBC)](https://twitter.com/_abhijithv)

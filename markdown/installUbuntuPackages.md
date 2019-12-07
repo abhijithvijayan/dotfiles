@@ -4,161 +4,187 @@
 sudo apt update && sudo apt upgrade
 ```
 
-### Install media codecs
+## Install Packages
 
-```
-sudo apt-get install ubuntu-restricted-extras
-```
+- #### Configure apt
 
-### Install GDebi
+  Ensure apt is set up to work with https sources:
 
-```
-sudo apt install gdebi
-```
+  ```
+  sudo apt-get install apt-transport-https
+  ```
 
-### Use Flatpak
+- #### media codecs
 
-```
-sudo apt install flatpak
-sudo apt install gnome-software-plugin-flatpak
+  ```
+  sudo apt-get install ubuntu-restricted-extras
+  ```
 
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-```
+- #### GDebi
 
-### Install synaptic package manager
+  ```
+  sudo apt install gdebi
+  ```
 
-```
-sudo apt-get install synaptic -y
-```
+- #### Use Flatpak
 
-### Enable and Start Firewall(ufw)
+  ```
+  sudo apt install flatpak
+  sudo apt install gnome-software-plugin-flatpak
 
-```
-sudo ufw enable
-```
+  flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+  ```
 
-### Install VLC
+- #### synaptic package manager
 
-```
-sudo apt-get install vlc -y
-```
+  ```
+  sudo apt-get install synaptic -y
+  ```
 
-### Install Filezilla
+- #### Enable and Start Firewall(ufw)
 
-```
-sudo apt-get install filezilla -y
-```
+  ```
+  sudo ufw enable
+  ```
 
-### Install Shutter
+- #### VLC
 
-```
-sudo apt-get install shutter -y
-```
+  ```
+  sudo apt-get install vlc -y
+  ```
 
-### Install Deluge
+- #### Filezilla
 
-```
-sudo add-apt-repository ppa:deluge-team/ppa
-sudo apt-get update && sudo apt-get install deluge
-```
+  ```
+  sudo apt-get install filezilla -y
+  ```
 
-### Install Stacer
+- #### Shutter
 
-```
-sudo add-apt-repository ppa:oguzhaninan/stacer -y
-sudo apt-get update
-sudo apt-get install stacer -y
-```
+  ```
+  sudo apt-get install shutter -y
+  ```
 
-### Install Neofetch
+- #### Deluge
 
-```
-sudo apt install neofetch
-```
+  ```
+  sudo add-apt-repository ppa:deluge-team/ppa
 
-### Install Git
+  sudo apt-get update && sudo apt-get install deluge
+  ```
 
-```
-sudo apt-get install git -y
-```
+- #### Stacer
 
-### Install OpenJDK
+  ```
+  sudo add-apt-repository ppa:oguzhaninan/stacer -y
 
-```
-sudo apt-get install openjdk-8-jdk
-```
+  sudo apt-get update && sudo apt-get install stacer -y
+  ```
 
-### Install CPU Checker
+- #### Neofetch
 
-```
-sudo apt-get install cpu-checker
-```
+  ```
+  sudo apt install neofetch
+  ```
 
-### Install [KVM](https://help.ubuntu.com/community/KVM/Installation)
+- #### Git
 
-```
-sudo apt install qemu qemu-kvm libvirt-bin  bridge-utils  virt-manager
+  ```
+  sudo apt-get install git -y
+  ```
 
-sudo service libvirtd start
+- #### OpenJDK
 
-sudo update-rc.d libvirtd enable
+  ```
+  sudo apt-get install openjdk-8-jdk
+  ```
 
-sudo adduser <username> kvm
+- #### CPU Checker
 
-sudo chown <username> -R /dev/kvm
-```
+  ```
+  sudo apt-get install cpu-checker
+  ```
 
-### Install curl
+- #### [KVM](https://help.ubuntu.com/community/KVM/Installation)
 
-```
-sudo apt install curl
-```
+  ```
+  sudo apt install qemu qemu-kvm libvirt-bin  bridge-utils  virt-manager
 
-### Install nvm
+  sudo service libvirtd start
 
-```
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
-```
+  sudo update-rc.d libvirtd enable
 
-### Install yarn
+  sudo adduser <username> kvm
 
-```
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+  sudo chown <username> -R /dev/kvm
+  ```
 
-sudo apt-get update && sudo apt-get install --no-install-recommends yarn
-```
+- #### curl
 
-### Eslint Config
+  ```
+  sudo apt install curl
+  ```
 
-```
-npx install-peerdeps --global eslint-config-onepass
-```
+- #### nvm
 
-```
-# See eslintrc dotfile for config
-touch ~/.eslintrc
-```
+  ```
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+  ```
 
-### Install grub-customizer
+- #### yarn
 
-```
-sudo add-apt-repository ppa:danielrichter2007/grub-customizer
-```
+  ```
+  curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+  echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 
-```
-sudo apt-get update
-sudo apt-get install grub-customizer
-```
+  sudo apt-get update && sudo apt-get install --no-install-recommends yarn
+  ```
 
-### Install tree
+- #### Eslint Config
 
-```
-sudo apt-get install tree
-```
+  ```
+  npx install-peerdeps --global eslint-config-onepass
+  ```
 
-### Install PostMan
+  ```
+  # See eslintrc dotfile for config
+  touch ~/.eslintrc
+  ```
 
-```
-sudo snap install postman
-```
+- #### grub-customizer
+
+  ```
+  sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+
+  sudo apt-get update && sudo apt-get install grub-customizer
+  ```
+
+- #### tree
+
+  ```
+  sudo apt-get install tree
+  ```
+
+- #### PostMan
+
+  ```
+  sudo snap install postman
+  ```
+
+- #### peek
+
+  ```
+  sudo add-apt-repository ppa:peek-developers/stable
+
+  sudo apt update
+  sudo apt install peek
+  ```
+
+- #### Sublime Text
+
+  ```
+  wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+  echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+
+  sudo apt-get update && sudo apt-get install sublime-text
+  ```

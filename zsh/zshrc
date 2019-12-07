@@ -1,9 +1,9 @@
 # Fetch screeninfo
 # screenfetch
 
-#------------------
-# Shell Variables
-#------------------
+#-------------------
+#  Shell Variables
+#-------------------
 
 # Specify VS Code as default editor for the React Native Simulator
 export REACT_EDITOR=code
@@ -15,10 +15,12 @@ export PATH="/home/${USER}/.npm-global/bin:$PATH"
 export TERM="xterm-256color"
 # Android SDK
 export ANDROID_HOME=$HOME/Android/Sdk
+# Firefox Developer Edition
+export PATH=/opt/firefox/firefox:$PATH
 
-#------------------
+#-------------------
 # PATH Manipulations
-#------------------
+#-------------------
 
 # Flutter
 export PATH="$PATH:$HOME/flutter/bin"
@@ -33,9 +35,9 @@ export PATH=$PATH:/usr/local/share/
 # Path to your oh-my-zsh installation.
 export ZSH="/home/${USER}/.oh-my-zsh"
 
-#------------------
-# Zsh hooks
-#------------------
+#-------------------
+#     Zsh hooks
+#-------------------
 
 plugins=(git)
 plugins=(zsh-autosuggestions)
@@ -83,9 +85,10 @@ function precmd () {
     echo -ne "$window_title"
 }
 
-#------------------
-# Aliases (for a full list of aliases, run `alias`)
-#------------------
+#-------------------
+#      Aliases 
+#   (run `alias`)
+#-------------------
 
 # Git Aliases
 alias gcm="git commit -m"
@@ -131,9 +134,9 @@ alias ll='colorls --group-directories-first --almost-all --long'
 # Clear terminal
 alias c='clear'
 
-#------------------
-# Miscellaneous
-#------------------
+#-------------------
+#   Miscellaneous
+#-------------------
 
 # User configuration
 fpath=($fpath "/home/${USER}/.zfunctions")
@@ -148,4 +151,6 @@ source /usr/local/share/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
+#-------------------
 #------ ENDS ------#
+#-------------------

@@ -23,6 +23,19 @@ sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emula
 sudo apt install gnome-tweak-tool -y
 ```
 
+### Install for browsers
+
+#### Install native host connector (Works for Firefox too)
+
+```
+sudo apt install chrome-gnome-shell
+```
+
+#### Extensions
+
+- Firefox: https://addons.mozilla.org/en-US/firefox/addon/gnome-shell-integration/
+- Chrome: https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep
+
 ### McMojave Theme
 
 https://www.gnome-look.org/p/1275087/
@@ -146,5 +159,9 @@ Extract the archive contents to this directory, and move the folder to `~/.local
 A Shell reload is required
 
 After that, enable the extension with `gnome-tweak-tool > Extensions`
+
+### Add Workspace Grid
+
+https://extensions.gnome.org/extension/484/workspace-grid/
 
 <hr />
