@@ -36,7 +36,7 @@ chsh -s /bin/zsh
 sh -c "$(wget -O- https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
-`# See zshrc, profile, bashrc, bash_profile dotfiles file for config`
+`# See dotfiles/zsh file for config`
 
 ### Fix Permissions (Critical)
 
@@ -140,8 +140,20 @@ touch ~/.config/colorls/dark_colors.yaml
 
 ### Apply shell configuration (Critical)
 
+```
+mkdir ~/.dotfiles
+```
+
+Copy `zsh` folder to `~/.dotfiles/`
+
+Rewrite shell config file
+
+```
+echo "source ~/.dotfiles/zsh/zshrc.zsh" >  ~/.zshrc
+```
+
 Update config files (see dotfiles) and then run
 
 ```
-source ~/.bash_profile
+source ~/.zshrc
 ```

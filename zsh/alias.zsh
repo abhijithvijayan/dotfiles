@@ -35,7 +35,7 @@ alias p='python3'
 alias p2='python2'
 
 # Docker
-alias c='docker'
+alias cr='docker'
 alias cs='docker ps'
 alias cu='docker-compose up'
 
