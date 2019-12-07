@@ -41,6 +41,10 @@ Follow instructions [here](markdown/installUbuntuPackages.md)
 
 I am using [Zsh](http://www.zsh.org) as my shell and [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) to install all my Zsh plugins.
 
+### Aliases and functions
+
+I use many aliases to get around my system as fast as possible. You can view them all [here](https://github.com/abhijithvijayan/dotfiles/blob/master/zsh/alias.zsh).
+
 ## Hyper
 
 ![Hyper](screenshots/ohMyHyper.png)
