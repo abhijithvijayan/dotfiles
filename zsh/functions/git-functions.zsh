@@ -151,6 +151,11 @@ gll() {
     git clone "$(pbpaste)"
 }
 
+# Clone repo 
+gcr() {
+  git clone $*
+}
+
 # See contents of .git from current dir recusively as a tree
 gte() {
 	tree -aC -I '.git' --dirsfirst "$@" | less -FRNX
