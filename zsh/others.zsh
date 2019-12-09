@@ -12,9 +12,6 @@ prompt spaceship
 # Add colors to terminal commands (green command means that the command is valid)
 source /usr/local/share/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-
 # Anaconda setup
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -30,3 +27,6 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
+# pipenv auto completion
+eval "$(pipenv --completion)"
