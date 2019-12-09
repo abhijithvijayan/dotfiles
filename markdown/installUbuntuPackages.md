@@ -188,3 +188,42 @@ sudo apt update && sudo apt upgrade
 
   sudo apt-get update && sudo apt-get install sublime-text
   ```
+
+- #### Python3
+
+  Lis installed Python versions
+
+  ```
+  sudo apt list --installed | grep python
+  ```
+
+  Upgrade
+
+  ```
+  sudo apt-get upgrade python3
+  ```
+
+  Install
+
+  ```
+  sudo apt-get install python3
+
+  sudo apt-get install build-essential libssl-dev libffi-dev python-dev
+  ```
+
+- #### pip
+
+  ```
+  sudo apt install python3-pip
+  ```
+
+- #### Python Virtual Env
+
+  ```
+  pip3 install pipenv
+  ```
+
+* #### Anaconda
+
+  - https://www.digitalocean.com/community/tutorials/how-to-install-anaconda-on-ubuntu-18-04-quickstart
+  - https://www.digitalocean.com/community/tutorials/how-to-set-up-jupyter-notebook-for-python-3

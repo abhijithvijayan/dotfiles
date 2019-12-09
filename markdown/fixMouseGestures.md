@@ -34,8 +34,8 @@ nano ~/.config/libinput-gestures.conf
 ```
 ### Custom Gestures
 
-gesture swipe left 4 \_internal ws_down
-gesture swipe right 4 \_internal ws_up
+gesture swipe right 4 \_internal ws_down
+gesture swipe left 4 \_internal ws_up
 gesture swipe up 3 xdotool key super+s
 gesture swipe down 3 xdotool key super+s
 gesture pinch in xdotool key control+minus
