@@ -20,7 +20,7 @@ setopt extended_glob # Use extended globbing syntax
 setopt auto_cd # Auto change to a dir without typing cd
 setopt hist_ignore_all_dups # remove older duplicate entries from history
 setopt hist_reduce_blanks # remove superfluous blanks from history items
-setopt correct_all # autocorrect commands
-setopt auto_list # automatically list choices on ambiguous completion
+# setopt correct_all # autocorrect commands
+# setopt auto_list # automatically list choices on ambiguous completion
 setopt auto_menu # automatically use menu completion
 setopt always_to_end # move cursor to end if word had one match
