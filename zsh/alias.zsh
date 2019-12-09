@@ -31,7 +31,11 @@ alias nowdate='date +"%d-%m-%Y"'
 alias p='python3'
 alias p2='python2'
 alias pip='pip3'
-alias penv='pipenv'
+alias pinstall='pipenv install'
+alias penv='pipenv --venv'
+alias pi=pinstall
+alias pshell='pipenv shell'
+alias pdelenv='pipenv --rm'
 
 #-------------------
 #      Docker
@@ -48,6 +52,7 @@ alias no='node'
 #-------------------
 #       Yarn
 #-------------------
+alias yi='yarn install'
 alias ja='yarn add'
 alias jt='yarn test'
 alias jr='yarn run'
