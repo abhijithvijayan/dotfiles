@@ -7,9 +7,9 @@
 #     General
 #-------------------
 # Open .zshrc to be edited in VS Code
-alias config="code ~/.zshrc"
+alias config='code ~/.zshrc'
 # Re-run source command on .zshrc to update current terminal session with new settings
-alias update="source ~/.zshrc"
+alias update='source ~/.zshrc'
 # View files/folder alias using colorsls (https://github.com/athityakumar/colorls)
 alias l='colorls --group-directories-first --almost-all'
 alias ls='colorls'
@@ -30,7 +30,8 @@ alias nowdate='date +"%d-%m-%Y"'
 #-------------------
 alias p='python3'
 alias p2='python2'
-alias pip="pip3"
+alias pip='pip3'
+alias penv='pipenv'
 
 #-------------------
 #      Docker
@@ -70,9 +71,9 @@ alias nginxtest='sudo /usr/local/nginx/sbin/nginx -t'
 #-------------------
 # easier navigation
 #-------------------
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
 alias doc='cd ~/Documents/'
 alias dz='cd ~/.dotfiles'
 alias de='cd ~/Desktop'
@@ -84,7 +85,6 @@ alias dq='cd ~/Downloads'
 alias gi='git init'
 alias ga='git add'
 alias g.='git add .'
-alias gl='git pull'
 alias gpl='git pull'
 alias gp='git push'
 alias gn='git clone'
@@ -96,7 +96,7 @@ alias ggf='git push -f'
 alias gj='open `git config remote.origin.url`'
 alias gl="git log --graph --pretty='%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias glb='git log --oneline --decorate --graph --all'
-alias gpm="git push origin master"
+alias gpm='git push origin master'
 alias grl='git reset --hard && git clean -df' # Reset to exact state as last commit
 # Undo your last commit, but don't throw away your changes
 alias greset='git reset --soft HEAD^'
@@ -107,7 +107,7 @@ alias gdn='git diff --name-only'
 # Git Status
 alias gs='git status --short'
 alias gss='git show --word-diff=color' # See changes made
-alias ungit="find . -name '.git' -exec rm -rf {} \;" # Remove git from a project
+alias ungit='find . -name '.git' -exec rm -rf {} \;" # Remove git from a projec'
 
 #-------------------
 #  Linux Utilities

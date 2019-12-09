@@ -30,13 +30,13 @@ gri() {
 }
 
 # Do an interactive rebase back N number of commits (e.g. grn 3)
-grn() { 
-  git rebase -i HEAD~"$1"; 
+grn() {
+  git rebase -i HEAD~"$1";
 }
 
 # Do an interactive rebase to a supplied commit hash (e.g. grbc 80e1625)
-grbic() { 
-  git rebase -i "$1"; 
+grbic() {
+  git rebase -i "$1";
 }
 
 # Update contributing file commit
@@ -151,7 +151,7 @@ gll() {
     git clone "$(pbpaste)"
 }
 
-# Clone repo 
+# Clone repo
 gcr() {
   git clone $*
 }
