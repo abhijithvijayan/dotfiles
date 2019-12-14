@@ -7,6 +7,14 @@ server() {
 	python -c $'import SimpleHTTPServer;\nmap = SimpleHTTPServer.SimpleHTTPRequestHandler.extensions_map;\nmap[""] = "text/plain";\nfor key, value in map.items():\n\tmap[key] = value + ";charset=UTF-8";\nSimpleHTTPServer.test();' "$port"
 }
 
+killport() {
+  local port="${1}"
+  echo "Killing process on port $port"
+  fuser -n tcp -k $port
+  echo "Done"
+  echo "###########################################"
+}
+
 # compress <file/dir> - Compress <file/dir>.
 compress() {
   dirPriorToExe=`pwd`

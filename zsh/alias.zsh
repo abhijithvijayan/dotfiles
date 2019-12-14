@@ -90,8 +90,9 @@ alias dq='cd ~/Downloads'
 alias gi='git init'
 alias ga='git add'
 alias g.='git add .'
-alias gpl='git pull'
-alias gp='git push'
+alias gp='git pull'
+alias pull='git pull'
+alias push='git push'
 alias gn='git clone'
 alias grao='git remote add origin'
 alias gb='git checkout -b'
@@ -105,14 +106,12 @@ alias gpm='git push origin master'
 alias grl='git reset --hard && git clean -df' # Reset to exact state as last commit
 # Undo your last commit, but don't throw away your changes
 alias greset='git reset --soft HEAD^'
-# Git Diff
 alias gd='git diff'
 alias gds='git diff --staged'
 alias gdn='git diff --name-only'
-# Git Status
-alias gs='git status --short'
+alias gs='git status --short' # Git Status
 alias gss='git show --word-diff=color' # See changes made
-alias ungit='find . -name '.git' -exec rm -rf {} \;" # Remove git from a projec'
+alias ungit="find . -name '.git' -exec rm -rf {} \;" # Remove git from a project
 
 #-------------------
 #  Linux Utilities
