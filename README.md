@@ -2,7 +2,7 @@
 
 > Zsh, VS Code, Sublime, Hyper
 
-![system-info](screenshots/neofetch.png)
+![system-info](screenshots/neofetch-image.png)
 
 These are my custom config settings for different apps/editors/etc that I use in my development environment.
 
@@ -19,7 +19,9 @@ You may reference them and I suggest not to copy them directly coz it may / may-
 
 ## VS Code
 
-My main editor of choice is [VS Code](https://github.com/Microsoft/vscode).
+My main editor of choice is [VS Code](https://github.com/Microsoft/vscode) with [Night Owl](https://marketplace.visualstudio.com/items?itemName=sdras.night-owl&WT.mc_id=twitter-social-sdras) editor theme by Sarah Drasner
+
+[Dank Mono](https://dank.sh/) font by Phil Plückthun
 
 Configs I use for it can be seen [here](vscode/). And [here](vscode/vs-code-extensions) is a list of extensions I use.
 
@@ -31,7 +33,7 @@ I use Sublime (coz you know Gedit 🤣) with [Ayu theme](https://github.com/demp
 
 ## Mac-Ubuntu
 
-<img src="screenshots/home.png" />
+<img src="screenshots/desktop.png" />
 
 ### Ubuntu Packages
 
