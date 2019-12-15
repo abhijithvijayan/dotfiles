@@ -125,6 +125,7 @@ alias iptlistin='sudo /sbin/iptables -L INPUT -n -v --line-numbers'
 alias iptlistout='sudo /sbin/iptables -L OUTPUT -n -v --line-numbers'
 alias iptlistfw='sudo /sbin/iptables -L FORWARD -n -v --line-numbers'
 alias firewall=iptlist
+alias flushdns='sudo systemd-resolve --flush-cache'
 
 alias cpu='top -o cpu'   # CPU
 alias mem='top -o rsize' # Memory
