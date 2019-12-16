@@ -114,12 +114,7 @@ module.exports = {
 
     // a list of plugins to fetch and install from npm
     plugins: [
-        // 'hyperminimal',
-        'hyper-sierra',
-        'hyper-search',
-        'hypercwd',
-        'hyper-tab-icons',
-    ],
+    'hyper-sierra', 'hyper-search', 'hypercwd', 'hyper-tab-icons', "hyper-night-owl"],
 
     // in development, you can create a directory under
     // `~/.hyper_plugins/local/` and include it here
