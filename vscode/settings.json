@@ -3,7 +3,9 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.suggestSelection": "recentlyUsed"
   },
   "[javascriptreact]": {
     "editor.formatOnSave": false
@@ -11,33 +13,82 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.suggestSelection": "recentlyUsed"
+  },
+  "bracket-pair-colorizer-2.forceIterationColorCycle": true,
   "cosmosDB.showSavePrompt": false,
   "debug.console.fontSize": 15,
   "diffEditor.ignoreTrimWhitespace": false,
-  "editor.colorDecorators": false,
-  "editor.cursorWidth": 3,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.cursorSmoothCaretAnimation": true,
   "editor.cursorStyle": "line",
+  "editor.cursorWidth": 3,
+  "editor.detectIndentation": true,
+  "editor.fontFamily": "'Dank Mono', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": false,
   "editor.fontSize": 16,
   "editor.fontWeight": "400",
-  "editor.formatOnPaste": true,
+  "editor.formatOnPaste": false,
   "editor.formatOnSave": true,
+  "editor.glyphMargin": false,
   "editor.letterSpacing": 0.5,
-  "editor.quickSuggestionsDelay": 30,
-  "editor.suggestSelection": "first",
+  "editor.lightbulb.enabled": false,
+  "editor.lineNumbers": "on",
   "editor.minimap.showSlider": "always",
+  "editor.quickSuggestionsDelay": 30,
+  "editor.renderWhitespace": "boundary",
+  "editor.smoothScrolling": true,
+  "editor.snippetSuggestions": "top",
+  "editor.suggestSelection": "first",
+  "editor.suggest.localityBonus": true,
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
+  "editor.wordBasedSuggestions": false,
   "editor.wordWrap": "on",
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
   "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
   "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.options": {
+    "env": {
+      "browser": true,
+      "jest/globals": true,
+      "es6": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "rules": {
+      "no-debugger": "off"
+    }
+  },
+  "explorer.confirmDragAndDrop": false,
+  "explorer.openEditors.visible": 0,
+  "files.exclude": {
+    "USE_GITIGNORE": true
+  },
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
+  "javascript.suggest.autoImports": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.validate.enable": false,
   "liveServer.settings.donotShowInfoMsg": true,
+  "npm.runSilent": true,
   "peacock.favoriteColors": [
     {
       "name": "Angular Red",
@@ -92,17 +143,64 @@
       "value": "#42b883"
     }
   ],
-  "prettier.disableLanguages": ["javascript", "javascriptreact"],
+  "prettier.bracketSpacing": false,
+  "prettier.disableLanguages": [
+    "javascript",
+    "javascriptreact"
+  ],
+  "prettier.jsxBracketSameLine": false,
+  "prettier.printWidth": 80,
+  "prettier.proseWrap": "always",
+  "prettier.requireConfig": true,
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "prettier.tabWidth": 2,
+  "prettier.trailingComma": "all",
+  "prettier.useTabs": false,
+  "python.dataScience.sendSelectionToInteractiveWindow": false,
+  "python.linting.pylintArgs": ["--load-plugins", "pylint-flask"],
+  "python.formatting.autopep8Args": [
+    "--ignore",
+    "E402"
+  ],
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/coverage": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.build": true,
+    "**/.gh-pages": true
+  },
   "sync.forceUpload": true,
   "sync.gist": "29b4a8efd7dcf184dbab68e984d2f6d3",
   "terminal.integrated.fontFamily": "'MesloLGMDZ Nerd Font', monospace",
   "terminal.integrated.rendererType": "dom",
+  "terminal.integrated.scrollback": 10000,
   "terminal.integrated.shell.windows": "C:\\WINDOWS\\sysnative\\bash.exe",
   "window.titleBarStyle": "custom",
   "window.zoomLevel": 2,
-  "workbench.colorCustomizations": {},
-  "workbench.colorTheme": "Material Theme Ocean High Contrast",
+  "workbench.colorCustomizations": {
+    "[Night Owl]": {
+      "activityBar.background": "#000C1D",
+      "activityBar.border": "#102a44",
+      "sideBar.background": "#001122",
+      "sideBar.border": "#102a44",
+      "sideBar.foreground": "#8BADC1"
+    },
+    "[Night Owl No Italics]": {
+      "activityBar.background": "#000C1D",
+      "activityBar.border": "#102a44",
+      "sideBar.background": "#001122",
+      "sideBar.border": "#102a44",
+      "sideBar.foreground": "#8BADC1"
+    }
+  },
+  "workbench.colorTheme": "Night Owl (No Italics)",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.sideBar.location": "left",
-  "workbench.startupEditor": "newUntitledFile"
+  "workbench.startupEditor": "newUntitledFile",
+  "typescript.suggest.autoImports": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.colorDecorators": false,
 }
