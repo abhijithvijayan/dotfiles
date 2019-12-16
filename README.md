@@ -2,7 +2,7 @@
 
 > Zsh, VS Code, Sublime, Hyper
 
-![system-info](screenshots/neofetch-image.png)
+![system-info](screenshots/neofetch.png)
 
 These are my custom config settings for different apps/editors/etc that I use in my development environment.
 
@@ -49,7 +49,7 @@ I use many aliases to get around my system as fast as possible. You can view the
 
 ## Hyper
 
-![Hyper](screenshots/ohMyHyper.png)
+![Hyper](screenshots/hyper.png)
 
 Setup the development environment using [instructions](markdown/customizeDevEnv.md)
 
