@@ -1,6 +1,5 @@
 #### Contents
 
-- [Brew](#install-brew)
 - [ZSH](#install-zsh)
 - [oh-my-zsh](#install-oh-my-zsh)
 - [ZSH Plugins](#zsh-plugins)
@@ -11,16 +10,10 @@
 - [Ruby](#install-ruby)
 - [Colorls](#install-colorls)
 
-### Install brew
-
-```
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
 
 ### Install ZSH
 
 ```
-brew install zsh
 sudo apt install zsh
 ```
 
