@@ -41,7 +41,7 @@ Follow instructions [here](docs/installUbuntuPackages.md)
 
 ## Zsh
 
-I am using [Zsh](http://www.zsh.org) as my shell and [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) to install all my Zsh plugins.
+I am using [Zsh](http://www.zsh.org) as my shell and [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) to install all my [Zsh plugins](zsh/README.md)
 
 ### Aliases and functions
 
