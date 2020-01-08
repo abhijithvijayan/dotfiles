@@ -1,27 +1,19 @@
 ## Mouse Gestures
 
-### Install Synaptics
-
-```
-sudo apt install xserver-xorg-input-synaptics
-```
-
 ### Lib-input Gestures
 
 https://github.com/bulletmark/libinput-gestures
 
 ```
-sudo gpasswd -a \$USER input
+sudo gpasswd -a $USER input
 sudo apt-get install xdotool wmctrl
 sudo apt-get install libinput-tools
 ```
 
 ```
 git clone https://github.com/bulletmark/libinput-gestures.git
-cd libinput-gestures
 
-sudo make install
-or
+cd libinput-gestures
 sudo ./libinput-gestures-setup install
 ```
 
