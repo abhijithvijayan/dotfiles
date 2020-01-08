@@ -114,9 +114,9 @@ sudo apt update && sudo apt upgrade
 
   sudo update-rc.d libvirtd enable
 
-  sudo adduser <username> kvm
+  sudo adduser $USER kvm
 
-  sudo chown <username> -R /dev/kvm
+  sudo chown $USER -R /dev/kvm
   ```
 
 - #### curl
@@ -129,6 +129,9 @@ sudo apt update && sudo apt upgrade
 
   ```
   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+  
+  nvm download 12
+  nvm alias default 12
   ```
 
 - #### yarn
