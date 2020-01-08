@@ -37,7 +37,7 @@ I use Sublime (coz you know Gedit 🤣) with [Ayu theme](https://github.com/demp
 
 ### Ubuntu Packages
 
-Follow instructions [here](markdown/installUbuntuPackages.md)
+Follow instructions [here](docs/installUbuntuPackages.md)
 
 ## Zsh
 
@@ -45,27 +45,27 @@ I am using [Zsh](http://www.zsh.org) as my shell and [oh-my-zsh](https://github.
 
 ### Aliases and functions
 
-I use many aliases to get around my system as fast as possible. You can view them all [here](https://github.com/abhijithvijayan/dotfiles/blob/master/zsh/alias.zsh).
+I use many aliases to get around my system as fast as possible. You can view them all [here](zsh/alias.zsh).
 
 ## Hyper
 
 ![Hyper](screenshots/hyper.png)
 
-Setup the development environment using [instructions](markdown/customizeDevEnv.md)
+Setup the development environment using [instructions](docs/customizeDevEnv.md)
 
 ### Browser Extensions
 
-See the list [here](markdown/browser-extensions-i-use.md)
+See the list [here](docs/browser-extensions-i-use.md)
 
 ### For HP Notebook 15-BS180TX
 
-- [Battery drain](markdown/fixBatteryDrain.md)
-- [Dual boot time](markdown/fixDualBootTime.md)
-- [Graphics Drivers](markdown/fixGraphicsDrivers.md)
-- [Mouse Gestures](markdown/fixMouseGestures.md)
-- [Shutdown Loop](markdown/fixShutdownLoop.md)
-- [Ubuntu Sources Issue](markdown/fixUbuntuSources.md)
-- [WiFi & bluetooth](markdown/fixWifiAndBluetooth.md)
+- [Battery drain](docs/fixBatteryDrain.md)
+- [Dual boot time](docs/fixDualBootTime.md)
+- [Graphics Drivers](docs/fixGraphicsDrivers.md)
+- [Mouse Gestures](docs/fixMouseGestures.md)
+- [Shutdown Loop](docs/fixShutdownLoop.md)
+- [Ubuntu Sources Issue](docs/fixUbuntuSources.md)
+- [WiFi & bluetooth](docs/fixWifiAndBluetooth.md)
 
 ## Thank you
 
