@@ -112,6 +112,7 @@ alias gdn='git diff --name-only'
 alias gs='git status --short' # Git Status
 alias gss='git show --word-diff=color' # See changes made
 alias ungit="find . -name '.git' -exec rm -rf {} \;" # Remove git from a project
+alias conflicts="git diff --name-only | uniq | xargs code"
 
 #-------------------
 #  Linux Utilities
