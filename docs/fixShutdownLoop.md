@@ -13,5 +13,5 @@ GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
 to:
 
 ```
-GRUB_CMDLINE_LINUX_DEFAULT="quiet splash noapci"
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash noapci idle=nomwait"
 ```
