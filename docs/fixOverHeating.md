@@ -20,27 +20,9 @@ Add the following to the
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
-## Recommended Tools
-
-## thermald
-```
-sudo apt-get install thermald
-```
-
-## Laptop Mode Tools
-
-```
-sudo add-apt-repository ppa:webupd8team/unstable
-sudo apt-get update
-sudo apt-get install laptop-mode-tools
-```
+## Recommended Tool
 
 ## CPUfreq
 ```
 sudo apt-get install indicator-cpufreq
-```
-
-## Monitor Hardware Temperature
-```
-sudo apt-get install lm-sensors hddtemp psensor
 ```

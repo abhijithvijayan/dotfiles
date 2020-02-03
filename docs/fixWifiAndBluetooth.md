@@ -2,7 +2,7 @@
 
 Bluetooth and Wi-fi Drivers for Realtek rtl8723de card
 
-Tested on HP 15-BS180TX
+Tested on HP 15-BS180TX, HP 15Q-DS0004TX in Ubuntu 18.04 LTS
 
 - ## Wifi Driver
 
@@ -32,7 +32,7 @@ sudo make install
 
 **REBOOT AND DISABLE SECURE BOOT FROM UEFI(BIOS)**
 
-Since Ubuntu kernel 4.4.0-20 the EFI_SECURE_BOOT_SIG_ENFORCE kernel config has been enabled. That prevents from loading unsigned third party modules if UEFI Secure Boot is enabled.
+Since Ubuntu kernel 4.4.x the EFI_SECURE_BOOT_SIG_ENFORCE kernel config has been enabled. That prevents from loading unsigned third party modules if UEFI Secure Boot is enabled.
 
 The easiest way to fix this issue is to disable Secure Boot in UEFI (BIOS) settings.
 
@@ -45,22 +45,11 @@ You can get into UEFI directly, but it depends on your hardware. Read your compu
 After Reboot
 
 ```
-cd rtlwifi_new
-```
-
-```
 sudo modprobe -r rtl8723de
-```
 
-```
 sudo modprobe rtl8723de
-```
 
-**Note:** If you get very weak signal try changing your antenna selection
-
-```
-sudo tee /etc/modprobe.d/rtl8723de.conf <<< "options rtl8723de ant_sel=2"
-
+sudo tee /etc/modprobe.d/rtl8723de.conf <<< "options rtl8723de ant_sel=2
 ```
 
 **FINALLY, REBOOT**
@@ -89,13 +78,9 @@ It can be installed by
 
 ```
 sudo add-apt-repository ppa:hanipouspilot/bluetooth
-```
 
-```
 sudo apt update
-```
 
-```
 sudo apt install btrtl-rtl8723de-dkms
 ```
 
