@@ -230,3 +230,10 @@ sudo apt update && sudo apt upgrade
 
   - https://www.digitalocean.com/community/tutorials/how-to-install-anaconda-on-ubuntu-18-04-quickstart
   - https://www.digitalocean.com/community/tutorials/how-to-set-up-jupyter-notebook-for-python-3
+
+- #### Sayonara
+  ```
+  sudo apt-add-repository ppa:lucioc/sayonara
+  sudo apt-get update
+  sudo apt-get install sayonara
+  ```

@@ -27,6 +27,7 @@ You may reference them and I suggest not to copy them directly coz it may / may-
 - [Zsh](#zsh)
   - [Aliases and functions](#aliases-and-functions)
 - [Hyper](#hyper)
+- [Browser](#browser-extensions)
 
 ## VS Code
 
@@ -64,9 +65,11 @@ I use many aliases to get around my system as fast as possible. You can view the
 
 Setup the development environment using [instructions](docs/customizeDevEnv.md)
 
-### Browser Extensions
+## Browser Extensions
 
-See the list [here](docs/browser-extensions-i-use.md)
+See the list of extensions/addons or theme I use [here](docs/browser-extensions-i-use.md)
+
+<hr />
 
 ![system-info](screenshots/neofetch.png)
 
@@ -76,6 +79,7 @@ See the list [here](docs/browser-extensions-i-use.md)
 - [Dual boot time](docs/fixDualBootTime.md)
 - [Graphics Drivers](docs/fixGraphicsDrivers.md)
 - [Mouse Gestures](docs/fixMouseGestures.md)
+- [Overheating](docs/fixOverHeating.md)
 - [Shutdown Loop](docs/fixShutdownLoop.md)
 - [Ubuntu Sources Issue](docs/fixUbuntuSources.md)
 - [WiFi & bluetooth](docs/fixWifiAndBluetooth.md)
