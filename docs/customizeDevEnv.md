@@ -51,7 +51,7 @@ sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emula
       mkdir ~/.icons
       ```
 
-      Download & extract latest tar
+      Download & extract latest `Mojave-dark-solid.tar.xz`
 
       Move the extracted folder to `~/.themes`
 
@@ -164,4 +164,6 @@ sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emula
 
       https://extensions.gnome.org/extension/484/workspace-grid/
 
+  - ### Add Hide Top Bar
+      https://extensions.gnome.org/extension/545/hide-top-bar/
 <hr />
