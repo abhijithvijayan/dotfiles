@@ -49,7 +49,7 @@ sudo modprobe -r rtl8723de
 
 sudo modprobe rtl8723de
 
-sudo tee /etc/modprobe.d/rtl8723de.conf <<< "options rtl8723de ant_sel=2
+sudo tee /etc/modprobe.d/rtl8723de.conf <<< "options rtl8723de ant_sel=2"
 ```
 
 **FINALLY, REBOOT**
