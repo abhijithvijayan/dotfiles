@@ -14,8 +14,8 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 # Chrome web driver
 export PATH=$PATH:/usr/local/share/
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+# Allow RubyGems to be executed
+PATH="$PATH:$(ruby -e 'puts Gem.user_dir')/bin"
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/${USER}/.oh-my-zsh"

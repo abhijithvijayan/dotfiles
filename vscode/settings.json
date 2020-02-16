@@ -1,11 +1,10 @@
 {
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.html-language-features"
   },
   "[javascript]": {
     "editor.formatOnSave": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.suggestSelection": "recentlyUsed"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascriptreact]": {
     "editor.formatOnSave": false
@@ -15,21 +14,29 @@
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.suggestSelection": "recentlyUsed"
+    "editor.formatOnSave": false
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": false
   },
   "bracket-pair-colorizer-2.forceIterationColorCycle": true,
+  "color-highlight.markerType": "dot-before",
   "cosmosDB.showSavePrompt": false,
   "debug.console.fontSize": 15,
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.acceptSuggestionOnEnter": "off",
+  "editor.colorDecorators": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
   "editor.cursorSmoothCaretAnimation": true,
   "editor.cursorStyle": "line",
   "editor.cursorWidth": 3,
   "editor.detectIndentation": true,
   "editor.fontFamily": "'Dank Mono', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": false,
-  "editor.fontSize": 16,
+  "editor.fontSize": 15,
   "editor.fontWeight": "400",
   "editor.formatOnPaste": false,
   "editor.formatOnSave": true,
@@ -52,7 +59,6 @@
     "javascript": "javascriptreact"
   },
   "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
-  "eslint.autoFixOnSave": true,
   "eslint.validate": [
     "javascript",
     "javascriptreact",
@@ -79,7 +85,13 @@
   "explorer.confirmDragAndDrop": false,
   "explorer.openEditors.visible": 0,
   "files.exclude": {
+    "**/haters": true,
     "USE_GITIGNORE": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/*/**": true
   },
   "git.autofetch": true,
   "git.confirmSync": false,
@@ -146,7 +158,9 @@
   "prettier.bracketSpacing": false,
   "prettier.disableLanguages": [
     "javascript",
-    "javascriptreact"
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
   ],
   "prettier.jsxBracketSameLine": false,
   "prettier.printWidth": 80,
@@ -178,29 +192,12 @@
   "terminal.integrated.rendererType": "dom",
   "terminal.integrated.scrollback": 10000,
   "terminal.integrated.shell.windows": "C:\\WINDOWS\\sysnative\\bash.exe",
+  "typescript.suggest.autoImports": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
   "window.titleBarStyle": "custom",
-  "window.zoomLevel": 2,
-  "workbench.colorCustomizations": {
-    "[Night Owl]": {
-      "activityBar.background": "#000C1D",
-      "activityBar.border": "#102a44",
-      "sideBar.background": "#001122",
-      "sideBar.border": "#102a44",
-      "sideBar.foreground": "#8BADC1"
-    },
-    "[Night Owl No Italics]": {
-      "activityBar.background": "#000C1D",
-      "activityBar.border": "#102a44",
-      "sideBar.background": "#001122",
-      "sideBar.border": "#102a44",
-      "sideBar.foreground": "#8BADC1"
-    }
-  },
-  "workbench.colorTheme": "Night Owl (No Italics)",
+  "window.zoomLevel": 0.9,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.sideBar.location": "left",
   "workbench.startupEditor": "newUntitledFile",
-  "typescript.suggest.autoImports": false,
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "editor.colorDecorators": false,
+  "workbench.colorTheme": "Atlantic Night"
 }

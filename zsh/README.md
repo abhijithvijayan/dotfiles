@@ -51,21 +51,6 @@ git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/theme
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 ```
 
-<!--
-OR
-
-### Pure-prompt (Not so good with icons)
-
-```
-npm install -g pure-prompt
-
-git clone https://github.com/sindresorhus/pure.git "$ZSH_CUSTOM/themes/pure-prompt"
-
-ln -s "$ZSH_CUSTOM/themes/pure-prompt/pure.zsh" "$HOME/.zfunctions/prompt_pure_setup"
-ln -s "$ZSH_CUSTOM/themes/pure-prompt/async.zsh" "$HOME/.zfunctions/async"
-
-``` -->
-
 <hr />
 
 ### 2. Syntax-Highlighting
@@ -93,12 +78,6 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 ```
 sudo apt-get install fonts-powerline -y
-```
-
-### Install font manager
-
-```
-sudo apt update && sudo apt -y install font-manager
 ```
 
 ### Install Meslo patched font

@@ -1,6 +1,6 @@
-# My configuration files for Ubuntu
+# My Dev-Env configuration files
 
-> Zsh, VS Code, Sublime, Hyper
+> Zsh, VS Code, Sublime, Hyper, Linux
 
 <h3>🙋‍♂️ Made by <a href="https://twitter.com/_abhijithv">@abhijithvijayan</a></h3>
 <p>
@@ -23,6 +23,7 @@ You may reference them and I suggest not to copy them directly coz it may / may-
 
 - [VS Code](#vs-code)
 - [Sublime Text](#sublime-text)
+- [Arch-Linux-KDE](#arch-linux-kde)
 - [Mac-Ubuntu](#mac-ubuntu)
 - [Zsh](#zsh)
   - [Aliases and functions](#aliases-and-functions)
@@ -31,7 +32,7 @@ You may reference them and I suggest not to copy them directly coz it may / may-
 
 ## VS Code
 
-My main editor of choice is [VS Code](https://github.com/Microsoft/vscode) with [Night Owl](https://marketplace.visualstudio.com/items?itemName=sdras.night-owl&WT.mc_id=twitter-social-sdras) editor theme by Sarah Drasner
+My main editor of choice is [VS Code](https://github.com/Microsoft/vscode) with [Atlantic Night](https://marketplace.visualstudio.com/items?itemName=mrpbennett.atlantic-night) editor theme
 
 [Dank Mono](https://dank.sh/) font by Phil Plückthun
 
@@ -39,17 +40,30 @@ Configs I use for it can be seen [here](vscode/). And [here](vscode/vs-code-exte
 
 ![VSCODE](screenshots/vscode.png)
 
+<hr />
+
 ## Sublime Text
 
-I use Sublime (coz you know Gedit 🤣) with [Ayu theme](https://github.com/dempfi/ayu) for quick file edits
+I use Sublime with [Ayu theme](https://github.com/dempfi/ayu) for quick file edits
+
+<hr />
+
+## Arch-Linux-KDE
+
+<img src="screenshots/arch-linux.png" />
+
+- Packages: [here](docs/installArchLinuxPackages.md)
+
+<hr />
 
 ## Mac-Ubuntu
 
 <img src="screenshots/desktop.png" />
 
-### Ubuntu Packages
+- Customisation: [here](docs/customizeDevEnv.md)
+- Packages: [here](docs/installUbuntuPackages.md)
 
-Follow instructions [here](docs/installUbuntuPackages.md)
+<hr />
 
 ## Zsh
 
@@ -59,11 +73,17 @@ I am using [Zsh](http://www.zsh.org) as my shell and [oh-my-zsh](https://github.
 
 I use many aliases to get around my system as fast as possible. You can view them all [here](zsh/alias.zsh).
 
+- Customize Dev-Env: [Instructions](zsh/README.md)
+
+<hr />
+
 ## Hyper
 
 ![Hyper](screenshots/hyper.png)
 
-Setup the development environment using [instructions](docs/customizeDevEnv.md)
+- Install [instructions](hyper/install.md)
+
+<hr />
 
 ## Browser Extensions
 
@@ -71,7 +91,8 @@ See the list of extensions/addons or theme I use [here](docs/browser-extensions-
 
 <hr />
 
-![system-info](screenshots/neofetch.png)
+![system-info](screenshots/neofetch-arch.png)
+<!-- ![system-info](screenshots/neofetch.png) -->
 
 ### For HP Notebook 15-BS180TX
 
