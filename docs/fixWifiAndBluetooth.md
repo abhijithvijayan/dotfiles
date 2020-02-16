@@ -1,89 +1,81 @@
 # Realtek-RTL8723DE-drivers
 
-Bluetooth and Wi-fi Drivers for Realtek rtl8723de card
-
-Tested on HP 15-BS180TX, HP 15Q-DS0004TX in Ubuntu 18.04 LTS
-
-- ## Wifi Driver
-
-You will need to install "make", "gcc", "kernel headers", "kernel build essentials", and "git".
-
-```
-sudo apt-get install linux-headers-generic build-essential git libelf-dev
-```
-
-Clone the driver collection repo
-
-```
-git clone -b extended https://github.com/lwfinger/rtlwifi_new.git
-```
-
-```
-cd rtlwifi_new
-```
-
-```
-make
-```
-
-```
-sudo make install
-```
-
+Note:
 **REBOOT AND DISABLE SECURE BOOT FROM UEFI(BIOS)**
 
-Since Ubuntu kernel 4.4.x the EFI_SECURE_BOOT_SIG_ENFORCE kernel config has been enabled. That prevents from loading unsigned third party modules if UEFI Secure Boot is enabled.
+Follow these only if your wireless card is **Realtek rtl8273de**
 
-The easiest way to fix this issue is to disable Secure Boot in UEFI (BIOS) settings.
+Tested on ``HP 15-BS180TX``, ``HP 15Q-DS0004TX`` in ``Ubuntu 18.04 LTS``, ``Arch Linux`` with ``Kernel 5.4.19-1-lts x86_64``
 
-In most cases you can get into UEFI settings using grub menu. Press ESC button on booting, get into grub menu and select System Setup. Secure Boot option should be in "Security" or "Boot" section of the UEFI.
+- ## ## Wifi Driver
 
-You can get into UEFI directly, but it depends on your hardware. Read your computer manual to see how to get there. It may be Del, or F2 on boot, or something else.
+    ### 1. Install packages
+    You will need to install **"make"**, **"gcc"**, **"kernel headers"**, **"kernel build essentials"**, and **"git"**.
 
-**REBOOT**
+    ### Arch Linux
+    ```
+    sudo pacman -S git
+    sudo pacman -S dkms
+    sudo pacman -S linux-headers
+    ```
+    Reboot
 
-After Reboot
+    ### Ubuntu
 
-```
-sudo modprobe -r rtl8723de
+    ```
+    sudo apt-get install linux-headers-generic build-essential git libelf-dev
+    ```
+  
+  ## 2. Clone and Install
 
-sudo modprobe rtl8723de
+    ```
+    git clone -b extended https://github.com/lwfinger/rtlwifi_new.git
+    ```
 
-sudo tee /etc/modprobe.d/rtl8723de.conf <<< "options rtl8723de ant_sel=2"
-```
+    ```
+    cd rtlwifi_new
 
-**FINALLY, REBOOT**
+    make
 
-#### Optional configuration
+    sudo make install
 
-If it turns out that your system needs one of the configuration options, then do the following:
+    sudo modprobe -r rtl8723de
 
-nano /etc/modprobe.d/<<YOUR WIRELESS DRIVER CODE>>.conf
+    sudo modprobe rtl8723de
 
-There, enter the line below:
+    sudo tee /etc/modprobe.d/rtl8723de.conf <<< "options rtl8723de ant_sel=2"
+    ```
 
-```
-options rtl8723de <<driver_option_name>>=<value>
-```
+  **REBOOT**
 
-Refer the original **README** from [here](https://github.com/lwfinger/rtlwifi_new)
+  #### Optional configuration
 
-- ## Bluetooth Driver
+  If it turns out that your system needs one of the configuration options, then do the following:
 
-Support for this bluetooth device had been just added to the 4.17rc kernel.
+  `nano /etc/modprobe.d/<<YOUR WIRELESS DRIVER CODE>>.conf`
 
-The code can be easily backported to kernels 4.4 - 4.15. Somebody made a PPA with DKMS packages for bionic and xenial with the updated btrtl module.
+  There, enter the line below:
 
-It can be installed by
+  ```
+  options rtl8723de <<driver_option_name>>=<value>
+  ```
 
-```
-sudo add-apt-repository ppa:hanipouspilot/bluetooth
+  Refer the original [Readme](https://github.com/lwfinger/rtlwifi_new)
 
-sudo apt update
+- ## ## Bluetooth Driver
 
-sudo apt install btrtl-rtl8723de-dkms
-```
+  Support for this bluetooth device had been just added to the 4.17rc+ kernel.
 
-**REBOOT**
+  The code can be easily backported to kernels 4.4 - 4.15. Somebody made a PPA with DKMS packages for bionic and xenial with the updated btrtl module.
 
-Follow these only if your wireless card is Realtek rtl8273de.
+  It can be installed on ubuntu by
+
+  ```
+  sudo add-apt-repository ppa:hanipouspilot/bluetooth
+
+  sudo apt update
+
+  sudo apt install btrtl-rtl8723de-dkms
+  ```
+
+  **REBOOT**
