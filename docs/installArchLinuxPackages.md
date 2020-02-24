@@ -127,6 +127,11 @@
     yay -S grub-customizer
     ```
 
+  - #### libtinfo.so.5
+    ```
+    yay -S ncurses5-compat-libs
+    ```
+
 ## Fonts
 
 ```

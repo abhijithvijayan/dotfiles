@@ -32,13 +32,12 @@ You may reference them and I suggest not to copy them directly coz it may / may-
 
 ## VS Code
 
-My main editor of choice is [VS Code](https://github.com/Microsoft/vscode) with [Atlantic Night](https://marketplace.visualstudio.com/items?itemName=mrpbennett.atlantic-night) editor theme
-
+My main editor of choice is [VS Code](https://github.com/Microsoft/vscode) with [Night Owl](https://github.com/sdras/night-owl-vscode-theme)(customised) editor theme by Sarah Drasner and
 [Dank Mono](https://dank.sh/) font by Phil Plückthun
 
 Configs I use for it can be seen [here](vscode/). And [here](vscode/vs-code-extensions) is a list of extensions I use.
 
-![VSCODE](screenshots/vscode.png)
+![VSCODE](screenshots/vscode-new.png)
 
 <hr />
 
@@ -50,7 +49,7 @@ I use Sublime with [Ayu theme](https://github.com/dempfi/ayu) for quick file edi
 
 ## Arch-Linux-KDE
 
-<img src="screenshots/arch-linux.png" />
+<img src="screenshots/arch-kde.png" />
 
 - Packages: [here](docs/installArchLinuxPackages.md)
 
@@ -94,7 +93,11 @@ See the list of extensions/addons or theme I use [here](docs/browser-extensions-
 ![system-info](screenshots/neofetch-arch.png)
 <!-- ![system-info](screenshots/neofetch.png) -->
 
-### For HP Notebook 15-BS180TX
+<hr />
+
+#### Note: These are for personal references only, please ignore the following
+
+##### For HP Notebook 15-BS180TX
 
 - [Battery drain](docs/fixBatteryDrain.md)
 - [Dual boot time](docs/fixDualBootTime.md)
