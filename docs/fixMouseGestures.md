@@ -22,17 +22,31 @@ sudo ./libinput-gestures-setup install
 ```
 nano ~/.config/libinput-gestures.conf
 ```
+  - ### Gnome
+    ```
+    ### Custom Gestures
 
-```
-### Custom Gestures
+    gesture swipe right 4 _internal ws_down
+    gesture swipe left 4 _internal ws_up
+    gesture swipe up 3 xdotool key super+s
+    gesture swipe down 3 xdotool key super+s
+    gesture pinch in xdotool key ctrl+minus
+    gesture pinch out xdotool key ctrl+plus
+    ```
 
-gesture swipe right 4 \_internal ws_down
-gesture swipe left 4 \_internal ws_up
-gesture swipe up 3 xdotool key super+s
-gesture swipe down 3 xdotool key super+s
-gesture pinch in xdotool key control+minus
-gesture pinch out xdotool key control+plus
-```
+  - ### KDE
+    ```
+    ### Custom Gestures
+
+    # Example of 4 static workspaces, e.g. using KDE virtual-desktops,
+    # arranged in 2 rows of 2 columns across 
+    gesture swipe right 4 _internal --cols 2 --wrap ws_down
+    gesture swipe left 4 _internal --cols 2 --wrap ws_up
+    gesture swipe up 3 xdotool key super+s
+    gesture swipe down 3 xdotool key super+s
+    gesture pinch in xdotool key ctrl+minus
+    gesture pinch out xdotool key ctrl+plus
+    ```
 
 #### Autostart on startup
 
