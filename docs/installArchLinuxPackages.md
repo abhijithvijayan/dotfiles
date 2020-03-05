@@ -151,3 +151,7 @@ yay -S ttf-ubuntu-font-family
    viii. `Minimize Window` to `Meta + Down`
    ix. `Maximize Window` to `Meta + Up`
    x. `Activate Application Menu Widget` to `Ctrl + Space`
+   xi. `Capture Active Window` to `Meta + Print`
+   xii. `Capture Entire Desktop` to `Print`
+   xiii. `Capture Rectangular Region` to `Shift Print` 
+   xiv. `Launch Spectacle` to `Ctrl + Shift + Print`
