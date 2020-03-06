@@ -143,16 +143,15 @@ yay -S ttf-ubuntu-font-family
 1. Go to `System Settings -> Shortcuts`
 2.
         i. `Walk Through Desktops` to `Meta + Tab`
-        ii. `Walk Through Desktops (Reverse)` to `Meta + Shift + Tab`
-        iii. `Toggle Present Windows(All Desktops)` to `Shift + F10`
+        ii. `Toggle Present Windows(All Desktops)` to `Meta + Shift + Tab`
+        iii. `Activate Application Menu Widget` to `Ctrl + Space`
         iv. `Switch to Next Desktop` to `Meta + Ctrl + Right`
         v. `Switch to Previous Desktop` to `Meta + Ctrl + Left`
         vi. `Show Desktop Grid` to `Meta + Ctrl + Up`
         vii. `Show System Activity` to `Ctrl + Shift + Esc`
         viii. `Minimize Window` to `Meta + Down`
         ix. `Maximize Window` to `Meta + Up`
-        x. `Activate Application Menu Widget` to `Ctrl + Space`
+        x. `Launch Spectacle` to `Ctrl + Shift + Print`
         xi. `Capture Active Window` to `Meta + Print`
         xii. `Capture Entire Desktop` to `Print`
         xiii. `Capture Rectangular Region` to `Shift Print` 
-        xiv. `Launch Spectacle` to `Ctrl + Shift + Print`
