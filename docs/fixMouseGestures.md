@@ -20,6 +20,8 @@ https://github.com/bulletmark/libinput-gestures
 
 #### Configuration
 
+Note: Comment all entries in the default configuration file at `/etc/libinput-gestures.conf`
+
 ```
 nano ~/.config/libinput-gestures.conf
 ```
@@ -37,29 +39,36 @@ nano ~/.config/libinput-gestures.conf
 
   - ### KDE
     ```
-    # Custom Gestures/ for libinput-gestures
+    # ---- Custom Gestures/ for libinput-gestures ---- #
     # <abhijithvijayan, March 2020>
     #
     # The default configuration file exists at 
     # /etc/libinput-gestures.conf
-    # Note: COMMENT ALL EXISTING GESTURES IN THE GLOBAL FILE
     # This custom configuration file should be at
     # ~/.config/libinput-gestures.conf
 
-    # Example of 4 static workspaces, e.g. using KDE virtual-desktops,
-    # arranged in 1 row of 4 columns across 
+    # NOTE: 4 static KDE virtual-desktops, in 1 row of 4 columns across 
+
+    # ---- 4 finger swipe right -> next workspace ---- #
     gesture swipe right 4 _internal --cols 4 ws_right
+    # ---- 4 finger swipe left -> previous workspace ---- #
     gesture swipe left 4 _internal --cols 4 ws_left
+    # ---- 4 finger swipe up -> toggle workspaces overview ---- #
+    gesture swipe up 4 xdotool key super+ctrl+Down
+    # ---- 4 finger swipe up -> toggle workspaces overview ---- #
+    gesture swipe down 4 xdotool key super+ctrl+Down
 
-    # 3 finger swipe up -> show windows(all) overview 
-    gesture swipe up 3 xdotool key ctrl+F9
+    # ---- 3 finger swipe up -> show all windows overview ---- #
+    gesture swipe up 3 xdotool key super+ctrl+Up
+    # ---- 3 finger swipe down -> show desktop ---- #
+    gesture swipe down 3 xdotool key super+d
+    # ---- 3 finger swipe (right/left) -> walk through windows ---- #
+    gesture swipe right 3 xdotool key alt+shift+Tab
+    gesture swipe left 3 xdotool key alt+shift+Tab
 
-    # 3 finger swipe down -> minimize all windows
-    # gesture swipe down 3 xdotool key 
-
-    # pinch in/out -> control zoom
-    gesture pinch in      xdotool key ctrl+plus
-    gesture pinch out     xdotool key ctrl+minus
+    # ---- pinch in/out -> control zoom ---- #
+    gesture pinch in      xdotool key ctrl+minus
+    gesture pinch out     xdotool key ctrl+plus
     ```
 
 #### Autostart on startup
