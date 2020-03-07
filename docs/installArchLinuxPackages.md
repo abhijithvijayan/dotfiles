@@ -37,6 +37,16 @@
     ```
     yay -S ruby
     ```
+   
+  - #### FileZilla
+    ```
+    yay -S filezilla
+    ```
+   
+  - #### KGet download manager
+    ```
+    yay -S kget
+    ```
 
   - #### Telegram
     ```
