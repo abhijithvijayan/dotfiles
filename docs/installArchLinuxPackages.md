@@ -37,6 +37,16 @@
     ```
     yay -S ruby
     ```
+   
+  - #### FileZilla
+    ```
+    yay -S filezilla
+    ```
+   
+  - #### KGet download manager
+    ```
+    yay -S kget
+    ```
 
   - #### Telegram
     ```
@@ -145,7 +155,7 @@ yay -S ttf-ubuntu-font-family
        - `Walk Through Desktops` to `Meta + Tab`
        - `Walk Through Desktops(Reverse)` to `Meta + Shift + Tab`
        - `Toggle Present Windows(All Desktops)` to `Meta + Ctrl + Up`
-       - `Activate Application Menu Widget` to `Ctrl + Space`
+       - `Activate Application Menu Widget` to `Ctrl + F10`
        - `Switch to Next Desktop` to `Meta + Ctrl + Right`
        - `Switch to Previous Desktop` to `Meta + Ctrl + Left`
        - `Show Desktop Grid` to `Meta + Ctrl + Down`
