@@ -7,7 +7,7 @@ module.exports = {
         updateChannel: 'stable',
 
         // default font size in pixels for all tabs
-        fontSize: 14,
+        fontSize: 13,
 
         // fonts with optional fallbacks.
         // https://github.com/ryanoasis/nerd-fonts/releases/latest
@@ -114,11 +114,21 @@ module.exports = {
 
         // Whether to use the WebGL renderer.
         webGLRenderer: true,
+
+        hyperBorder: {
+            borderWidth: '1px',
+            borderRadiusOuter: '1px',
+            borderRadiusInner: '1px',
+            borderColors: 'rgba(28,35,65, 0.5)'
+        },
+
     },
 
     // a list of plugins to fetch and install from npm
     plugins: [
-        'hyper-night-owl'
+        'hyper-atlantic-night-owl',
+        'hyper-statusline',
+        'hyperborder'
     ],
 
     // in development, you can create a directory under
