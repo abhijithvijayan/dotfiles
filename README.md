@@ -32,7 +32,7 @@ You may reference them and I suggest not to copy them directly coz it may / may-
 
 ## VS Code
 
-My main editor of choice is [VS Code](https://github.com/Microsoft/vscode) with [Night Owl](https://github.com/sdras/night-owl-vscode-theme)(customised) editor theme by Sarah Drasner and
+My main editor of choice is [VS Code](https://github.com/Microsoft/vscode) with [Night Owl](https://github.com/sdras/night-owl-vscode-theme)(customised a.k.a atlantic-night-owl) editor theme by Sarah Drasner and
 [Dank Mono](https://dank.sh/) font by Phil Plückthun
 
 Configs I use for it can be seen [here](vscode/). And [here](vscode/vs-code-extensions) is a list of extensions I use.
@@ -77,6 +77,8 @@ I use many aliases to get around my system as fast as possible. You can view the
 <hr />
 
 ## Hyper
+
+I use my own [hyper-atlantic-night-owl](https://github.com/abhijithvijayan/hyper-atlantic-night-owl) theme which is based on my color customisations for Night Owl theme for VSCode
 
 ![Hyper](screenshots/hyper.png)
 

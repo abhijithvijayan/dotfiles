@@ -7,8 +7,20 @@ https://hyper.is/
 # See hyper.js dotfile for config
 ```
 
-Set hyper as default terminal
+### Plugins
 
+Update `~/hyper.js` config with 
 ```
-sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /opt/Hyper/hyper 50
+plugins: [
+    'hyper-atlantic-night-owl',
+    'hyper-statusline',
+    'hyperborder',
+    'hypercwd'
+],
 ```
+
+- [hyper-atlantic-night-owl](https://github.com/abhijithvijayan/hyper-atlantic-night-owl) Theme
+- [hyper-statusline](https://github.com/henrikdahl/hyper-statusline) shows footer stausbar
+- [hypercwd](https://github.com/hharnisc/hypercwd) creates a new tab(s) from the current working directory
+- [hyperborder](https://github.com/webmatze/hyperborder) creates a border for hyper
+``

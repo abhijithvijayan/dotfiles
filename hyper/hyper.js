@@ -128,7 +128,8 @@ module.exports = {
     plugins: [
         'hyper-atlantic-night-owl',
         'hyper-statusline',
-        'hyperborder'
+        'hyperborder',
+        'hypercwd'
     ],
 
     // in development, you can create a directory under
