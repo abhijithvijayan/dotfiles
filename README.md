@@ -80,7 +80,7 @@ I use many aliases to get around my system as fast as possible. You can view the
 
 I use my own [hyper-atlantic-night-owl](https://github.com/abhijithvijayan/hyper-atlantic-night-owl) theme which is based on my color customisations for Night Owl theme for VSCode
 
-![Hyper](screenshots/hyper.png)
+![Hyper](screenshots/hyperjs.png)
 
 - Install [instructions](hyper/install.md)
 
