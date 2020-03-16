@@ -9,7 +9,7 @@ module.exports = {
         // default font size in pixels for all tabs
         fontSize: 14,
 
-        // font family with optional fallbacks.
+        // fonts with optional fallbacks.
         // https://github.com/ryanoasis/nerd-fonts/releases/latest
         fontFamily: '"MesloLGMDZ Nerd Font", monospace',
         // fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
@@ -35,6 +35,7 @@ module.exports = {
         // `'BEAM'` for |, `'UNDERLINE'` for _, `'BLOCK'` for █
         cursorShape: 'BEAM',
 
+        // blinking cursor
         cursorBlink: true,
 
         // color of the text
@@ -60,8 +61,8 @@ module.exports = {
         // default: `true` on Linux, `true` on Windows, ignored on macOS
         showHamburgerMenu: false,
 
-        // additionally, set to `'left'` if you want them on the left, like in Ubuntu
-        showWindowControls: true,
+        // additionally, set to `'left'` if you want them on the left
+        showWindowControls: 'left',
 
         // custom padding (CSS format, i.e.: `top right bottom left`)
         padding: '12px 14px',
@@ -95,6 +96,9 @@ module.exports = {
         // for environment variables
         env: {},
 
+        // set to `false` for no bell
+        bell: false,
+
         // if `true` selected text will automatically be copied to the clipboard
         copyOnSelect: false,
 
@@ -114,7 +118,8 @@ module.exports = {
 
     // a list of plugins to fetch and install from npm
     plugins: [
-    'hyper-sierra', 'hyper-search', 'hypercwd', 'hyper-tab-icons', "hyper-night-owl"],
+        'hyper-night-owl'
+    ],
 
     // in development, you can create a directory under
     // `~/.hyper_plugins/local/` and include it here
