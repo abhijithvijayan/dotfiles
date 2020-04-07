@@ -104,7 +104,7 @@ https://github.com/athityakumar/colorls#installation
 
 ```
 sudo gem install colorls -y
-mdkir ~/.config/colorls/
+mkdir ~/.config/colorls
 
 # See dark_colors.yaml for config
 touch ~/.config/colorls/dark_colors.yaml
