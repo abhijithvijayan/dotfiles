@@ -9,9 +9,6 @@
   "[javascriptreact]": {
     "editor.formatOnSave": false
   },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": false
@@ -21,6 +18,7 @@
   },
   "bracket-pair-colorizer-2.forceIterationColorCycle": true,
   "color-highlight.markerType": "dot-before",
+  "C_Cpp.clang_format_style": "{ BasedOnStyle: LLVM, AlignAfterOpenBracket: DontAlign, AlignConsecutiveAssignments: true, AlignTrailingComments: true, AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: true, ColumnLimit: 80, IndentWidth: 4, UseTab: Never }",
   "cosmosDB.showSavePrompt": false,
   "debug.console.fontSize": 15,
   "diffEditor.ignoreTrimWhitespace": false,
@@ -28,7 +26,7 @@
   "editor.acceptSuggestionOnEnter": "off",
   "editor.colorDecorators": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll": true
   },
   "editor.cursorSmoothCaretAnimation": true,
   "editor.cursorStyle": "line",
@@ -40,15 +38,14 @@
   "editor.fontWeight": "400",
   "editor.formatOnPaste": false,
   "editor.formatOnSave": true,
-  "editor.glyphMargin": false,
   "editor.letterSpacing": 0.5,
   "editor.lightbulb.enabled": false,
   "editor.lineNumbers": "on",
   "editor.minimap.showSlider": "always",
   "editor.quickSuggestionsDelay": 30,
+  "editor.renderLineHighlight": "all",
   "editor.renderWhitespace": "boundary",
   "editor.smoothScrolling": true,
-  "editor.snippetSuggestions": "top",
   "editor.suggestSelection": "first",
   "editor.suggest.localityBonus": true,
   "editor.tabCompletion": "on",
@@ -68,7 +65,6 @@
   "eslint.options": {
     "env": {
       "browser": true,
-      "jest/globals": true,
       "es6": true
     },
     "parserOptions": {
@@ -101,8 +97,7 @@
   "javascript.validate.enable": false,
   "liveServer.settings.donotShowInfoMsg": true,
   "npm.runSilent": true,
-  "peacock.favoriteColors": [
-    {
+  "peacock.favoriteColors": [{
       "name": "Angular Red",
       "value": "#b52e31"
     },
@@ -172,7 +167,10 @@
   "prettier.trailingComma": "all",
   "prettier.useTabs": false,
   "python.dataScience.sendSelectionToInteractiveWindow": false,
-  "python.linting.pylintArgs": ["--load-plugins", "pylint-flask"],
+  "python.linting.pylintArgs": [
+    "--load-plugins",
+    "pylint-flask"
+  ],
   "python.formatting.autopep8Args": [
     "--ignore",
     "E402"
@@ -194,10 +192,66 @@
   "terminal.integrated.shell.windows": "C:\\WINDOWS\\sysnative\\bash.exe",
   "typescript.suggest.autoImports": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
+  // "window.autoDetectColorScheme": true,
+  "workbench.preferredLightColorTheme": "Night Owl Light",
+  "workbench.preferredDarkColorTheme": "Night Owl",
   "window.titleBarStyle": "custom",
-  "window.zoomLevel": 0.9,
+  "window.zoomLevel": 1,
+  "workbench.colorCustomizations": {
+    "[Night Owl]": {
+      // main editor
+      "editor.background": "#000720",
+      "editor.foreground": "#dadfe1",
+      "editorLineNumber.foreground": "#5c6b80",
+      "editorLineNumber.activeForeground": "#6ba9ff",
+      "editor.lineHighlightBorder": "#000720",
+      "editorGutter.background": "#000720",
+      // gutter
+      "editorGutter.modifiedBackground": "#daa520",
+      "editorGutter.addedBackground": "#5ac95a",
+      "editorGutter.deletedBackground": "#f64747",
+      // activity bar
+      "activityBar.background": "#000720",
+      "activityBar.foreground": "#5D81B3",
+      "activityBarBadge.background": "#5D81B3",
+      "activityBarBadge.foreground": "#000720",
+      // badge
+      "badge.background": "#5D81B3",
+      "badge.foreground": "#000720",
+      // sidebar
+      "sideBar.background": "#000720",
+      "sideBar.foreground": "#5c6b80",
+      "sideBar.border": "#1b213b",
+      "sideBarTitle.foreground": "#5c6b80",
+      "sideBarSectionHeader.background": "#000720",
+      "sideBarSectionHeader.foreground": "#5c6b80",
+      "sideBarSectionHeader.border": "#5c6b80",
+      // Editor Groups & Tabs
+      "editorGroup.border": "#000720",
+      "editorGroup.dropBackground": "#000720",
+      "editorGroupHeader.tabsBackground": "#000720",
+      "tab.activeBackground": "#1c2341",
+      "tab.unfocusedActiveBackground": "#1a203b",
+      "tab.inactiveBackground": "#0e1224",
+      // status bar
+      "statusBar.background": "#101425",
+      "statusBar.foreground": "#6287bb",
+      "statusBar.debuggingBackground": "#101425",
+      "statusBar.debuggingForeground": "#6287bb",
+      // panel
+      "panel.background": "#000720",
+      "panel.border": "#5c6b80",
+      "panelTitle.activeBorder": "#5c6b80"
+    },
+    "[Night Owl No Italics]": {
+      // apply to both when https://github.com/Microsoft/vscode/issues/71842 resolves
+    }
+  },
   "workbench.iconTheme": "material-icon-theme",
   "workbench.sideBar.location": "left",
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.colorTheme": "Atlantic Night"
+  "workbench.colorTheme": "Night Owl",
+  "[json]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  }
 }
