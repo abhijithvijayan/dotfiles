@@ -1,5 +1,6 @@
 {
   "extends": [
-    "onepass"
+    "@abhijithvijayan/eslint-config",
+    "@abhijithvijayan/eslint-config/react"
   ]
 }
