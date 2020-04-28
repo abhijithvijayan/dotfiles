@@ -1,7 +1,7 @@
 ### Install Hyper.js
 
 Download from :
-https://hyper.is/
+<https://hyper.is/>
 
 ```
 # See hyper.js dotfile for config
@@ -9,7 +9,8 @@ https://hyper.is/
 
 ### Plugins
 
-Update `~/hyper.js` config with 
+Update `~/hyper.js` config with
+
 ```
 plugins: [
     'hyper-atlantic-night-owl',

@@ -16,13 +16,15 @@ sensors
 cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_driver
 ```
 
-
 Add the following to the
-`GRUB_CMDLINE_LINUX_DEFAULT` variable in the `/etc/default/grub` file: 
+`GRUB_CMDLINE_LINUX_DEFAULT` variable in the `/etc/default/grub` file:
+
 ```
 intel_pstate=disable
 ```
+
  then rebuild the grub config
+
 ```
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
@@ -30,6 +32,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 ## Recommended Tool
 
 ## CPUfreq
+
 ```
 sudo apt-get install indicator-cpufreq
 ```

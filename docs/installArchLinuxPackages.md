@@ -1,11 +1,13 @@
 ## Packages
 
-  - #### Synchronizing package databases
+- #### Synchronizing package databases
+
     ```
     yay -Syu
     ```
 
-  - #### Snap Store
+- #### Snap Store
+
     ```
     git clone https://aur.archlinux.org/snapd.git
     cd snapd
@@ -18,70 +20,83 @@
     sudo snap install snap-store
     ```
 
-  - #### Simplenote
+- #### Simplenote
+
     ```
     sudo snap install simplenote
     ```
 
-    #### Postman
+#### Postman
+
     ```
     sudo snap install postman
     ```
 
-  - #### Spotify
+- #### Spotify
+
     ```
     yay -S spotify
     ```
 
-  - #### Ruby
+- #### Ruby
+
     ```
     yay -S ruby
     ```
-   
-  - #### FileZilla
+
+- #### FileZilla
+
     ```
     yay -S filezilla
     ```
-   
-  - #### KGet download manager
+
+- #### KGet download manager
+
     ```
     yay -S kget
     ```
 
-  - #### Telegram
+- #### Telegram
+
     ```
     yay -S telegram-desktop
     ```
 
-  - #### Python Pip
+- #### Python Pip
+
     ```
     yay -S python-pip
     ```
   
-  - #### Pipenv
+- #### Pipenv
+
     ```
     pip3 install pipenv
     ```
   
-  - #### nvm
+- #### nvm
+
     ```
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
-    
+
     nvm download 12
     nvm alias default 12
     ```
 
-  - #### yarn
+- #### yarn
+
     ```
     yay -S yarn
     ```
 
-  - #### tree
+- #### tree
+
     ```
     yay -S tree
     ```
 
-  - #### Sublime Text3
+- #### Sublime Text3
+
     ```
     curl -O https://download.sublimetext.com/sublimehq-pub.gpg && sudo pacman-key --add sublimehq-pub.gpg && sudo pacman-key --lsign-key 8A8F901A && rm sublimehq-pub.gpg
 
@@ -90,8 +105,10 @@
     sudo pacman -Syu sublime-text
     ```
   
-  - #### KVM
-    Check Support: https://wiki.archlinux.org/index.php/KVM
+- #### KVM
+
+    Check Support: <https://wiki.archlinux.org/index.php/KVM>
+
     ```
     sudo pacman -S virt-manager qemu vde2 ebtables dnsmasq bridge-utils openbsd-netcat
 
@@ -99,12 +116,14 @@
     sudo systemctl start libvirtd.service
     ```
 
-  - #### Git
+- #### Git
+
     ```
     yay -S git
     ```
   
-  - #### Eslint
+- #### Eslint
+
     ```
     npx install-peerdeps --global eslint-config-onepass
 
@@ -112,32 +131,38 @@
     touch ~/.eslintrc
     ```
 
-  - #### VSCode
+- #### VSCode
+
     ```
     yay -S visual-studio-code-bin
     ```
 
-  - #### Google Chrome
+- #### Google Chrome
+
     ```
     yay -S google-chrome
     ```
 
-  - #### Disks
+- #### Disks
+
     ```
     yay -S gnome-disk-utility
     ```
 
-  - #### OpenJDK
+- #### OpenJDK
+
     ```
     yay -S openjdk10-src
     ```
 
-  - #### Grub Customiser
+- #### Grub Customiser
+
     ```
     yay -S grub-customizer
     ```
 
-  - #### libtinfo.so.5
+- #### libtinfo.so.5
+
     ```
     yay -S ncurses5-compat-libs
     ```
@@ -146,6 +171,9 @@
 
 ```
 yay -S ttf-ubuntu-font-family
+
+# emoji support
+sudo ./emoji.sh
 ```
 
 ## Shortcuts

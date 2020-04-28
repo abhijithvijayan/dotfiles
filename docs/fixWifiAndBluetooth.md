@@ -9,24 +9,27 @@ Tested on ``HP 15-BS180TX``, ``HP 15Q-DS0004TX`` in ``Ubuntu 18.04 LTS``, ``Arch
 
 - ## ## Wifi Driver
 
-    ### 1. Install packages
+### 1. Install packages
+
     You will need to install **"make"**, **"gcc"**, **"kernel headers"**, **"kernel build essentials"**, and **"git"**.
 
-    ### Arch Linux
+### Arch Linux
+
     ```
     sudo pacman -S git
     sudo pacman -S dkms
     sudo pacman -S linux-headers
     ```
+
     Reboot
 
-    ### Ubuntu
+### Ubuntu
 
     ```
     sudo apt-get install linux-headers-generic build-essential git libelf-dev
     ```
   
-  ## 2. Clone and Install
+## 2. Clone and Install
 
     ```
     git clone -b extended https://github.com/lwfinger/rtlwifi_new.git
@@ -48,7 +51,7 @@ Tested on ``HP 15-BS180TX``, ``HP 15Q-DS0004TX`` in ``Ubuntu 18.04 LTS``, ``Arch
 
   **REBOOT**
 
-  #### Optional configuration
+#### Optional configuration
 
   If it turns out that your system needs one of the configuration options, then do the following:
 

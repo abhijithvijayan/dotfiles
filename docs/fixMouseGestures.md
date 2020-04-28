@@ -2,15 +2,18 @@
 
 ### Lib-input Gestures
 
-https://github.com/bulletmark/libinput-gestures
+<https://github.com/bulletmark/libinput-gestures>
 
-  #### 1. Ubuntu
+#### 1. Ubuntu
+
   ```
   sudo gpasswd -a $USER input
   sudo apt-get install xdotool wmctrl
   sudo apt-get install libinput-tools
   ```
-  #### 2. Arch Linux
+
+#### 2. Arch Linux
+
   ```
   sudo pacman -S xdotool wmctrl
   sudo gpasswd -a $USER input
@@ -25,7 +28,9 @@ Note: Comment all entries in the default configuration file at `/etc/libinput-ge
 ```
 nano ~/.config/libinput-gestures.conf
 ```
-  - ### Gnome
+
+- ### Gnome
+
     ```
     ### Custom Gestures
 
@@ -37,17 +42,18 @@ nano ~/.config/libinput-gestures.conf
     gesture pinch out xdotool key ctrl+plus
     ```
 
-  - ### KDE
+- ### KDE
+
     ```
     # ---- Custom Gestures/ for libinput-gestures ---- #
     # <abhijithvijayan, March 2020>
     #
-    # The default configuration file exists at 
+    # The default configuration file exists at
     # /etc/libinput-gestures.conf
     # This custom configuration file should be at
     # ~/.config/libinput-gestures.conf
 
-    # NOTE: 4 static KDE virtual-desktops, in 1 row of 4 columns across 
+    # NOTE: 4 static KDE virtual-desktops, in 1 row of 4 columns across
 
     # ---- 4 finger swipe right -> next workspace ---- #
     gesture swipe right 4 _internal --cols 4 ws_right
@@ -82,11 +88,11 @@ libinput-gestures-setup start
 
 References:
 
-https://askubuntu.com/a/1035863
+<https://askubuntu.com/a/1035863>
 
-https://github.com/bulletmark/libinput-gestures/issues/112#issuecomment-356352149
+<https://github.com/bulletmark/libinput-gestures/issues/112#issuecomment-356352149>
 
-https://github.com/bulletmark/libinput-gestures
+<https://github.com/bulletmark/libinput-gestures>
 
 ```
 

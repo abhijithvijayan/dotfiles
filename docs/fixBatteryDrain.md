@@ -7,7 +7,7 @@ sudo apt install tlp tlp-rdw
 sudo tlp start
 ```
 
-### Enable ALPM:
+### Enable ALPM
 
 ```
 echo SATA_ALPM_ENABLE=true | sudo tee /etc/pm/config.d/sata_alpm
