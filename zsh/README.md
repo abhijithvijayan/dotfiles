@@ -102,12 +102,13 @@ sudo apt install ruby-full -y
 https://github.com/athityakumar/colorls#installation
 
 ```
-sudo gem install colorls -y
+sudo gem install colorls
 mkdir ~/.config/colorls
 
 # See dark_colors.yaml for config
 touch ~/.config/colorls/dark_colors.yaml
 ```
+> [dark_colors.yaml](https://github.com/abhijithvijayan/dotfiles/blob/master/hyper/dark_colors.yaml)
 
 ### Apply shell configuration (Critical)
 
