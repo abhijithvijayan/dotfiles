@@ -58,14 +58,13 @@ https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
 #### Note: if the zsh folder does not exists in /usr/local/share, just create it
 
 ```
-cd /usr/local/share/zsh
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git /usr/local/share/zsh/zsh-syntax-highlighting
 ```
 
 ### 3. Auto-Suggestion
 
 ```
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
 <hr />
