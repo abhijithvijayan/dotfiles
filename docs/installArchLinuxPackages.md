@@ -125,7 +125,7 @@
 - #### Eslint
 
     ```
-    npx install-peerdeps --global eslint-config-onepass
+    npx install-peerdeps --global @abhijithvijayan/eslint-config
 
     # See eslintrc dotfile for config
     touch ~/.eslintrc
