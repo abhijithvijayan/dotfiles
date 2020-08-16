@@ -13,9 +13,7 @@
 
 ### Install ZSH
 
-```
-sudo apt install zsh
-```
+> https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH#how-to-install-zsh-on-many-platforms
 
 Set ZSH as default shell
 
