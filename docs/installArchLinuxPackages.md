@@ -26,7 +26,7 @@
     sudo snap install simplenote
     ```
 
-#### Postman
+- #### Postman
 
     ```
     sudo snap install postman
