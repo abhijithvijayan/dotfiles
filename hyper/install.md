@@ -4,8 +4,9 @@ Download from :
 <https://hyper.is/>
 
 ```
-# See hyper.js dotfile for config
+# See dotfile for config
 ```
+[hyper.js](hyper.js)
 
 ### Plugins
 
@@ -24,4 +25,4 @@ plugins: [
 - [hyper-statusline](https://github.com/henrikdahl/hyper-statusline) shows footer stausbar
 - [hypercwd](https://github.com/hharnisc/hypercwd) creates a new tab(s) from the current working directory
 - [hyperborder](https://github.com/webmatze/hyperborder) creates a border for hyper
-``
+
