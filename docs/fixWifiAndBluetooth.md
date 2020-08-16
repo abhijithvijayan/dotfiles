@@ -9,35 +9,35 @@ Tested on ``HP 15-BS180TX``, ``HP 15Q-DS0004TX`` in ``Ubuntu 18.04 LTS``, ``Arch
 
 - ## ## Wifi Driver
 
-### 1. Install packages
+   ### 1. Install packages
 
-   You will need to install **"make"**, **"gcc"**, **"kernel headers"**, **"kernel build essentials"**, and **"git"**.
+      You will need to install **"make"**, **"gcc"**, **"kernel headers"**, **"kernel build essentials"**, and **"git"**.
 
-### Arch Linux
+   ### Arch Linux
 
-    sudo pacman -S git
-    sudo pacman -S dkms
-    sudo pacman -S linux-headers
+       sudo pacman -S git
+       sudo pacman -S dkms
+       sudo pacman -S linux-headers
 
-  **REBOOT**
+     **REBOOT**
 
-### Ubuntu
+   ### Ubuntu
 
-    sudo apt-get install linux-headers-generic build-essential git libelf-dev
-  
-## 2. Clone and Install
+       sudo apt-get install linux-headers-generic build-essential git libelf-dev
 
-    git clone https://github.com/lwfinger/rtw88.git
+   ## 2. Clone and Install
 
-    cd rtw88
+       git clone https://github.com/lwfinger/rtw88.git
 
-    make
+       cd rtw88
 
-    sudo make install
+       make
 
-  **REBOOT**
+       sudo make install
 
-  Refer the original [Readme](https://github.com/lwfinger/rtw88#installation-instruction)
+     **REBOOT**
+
+     Refer the original [Readme](https://github.com/lwfinger/rtw88#installation-instruction)
 
 - ## ## Bluetooth Driver
 
