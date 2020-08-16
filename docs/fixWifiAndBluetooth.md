@@ -13,17 +13,17 @@ Tested on ``HP 15-BS180TX``, ``HP 15Q-DS0004TX`` in ``Ubuntu 18.04 LTS``, ``Arch
 
       You will need to install **"make"**, **"gcc"**, **"kernel headers"**, **"kernel build essentials"**, and **"git"**.
 
-   ### Arch Linux
+   - #### Arch / Manjaro Linux
 
-       sudo pacman -S git
-       sudo pacman -S dkms
-       sudo pacman -S linux-headers
+         sudo pacman -S git
+         sudo pacman -S dkms
+         sudo pacman -S linux-headers
 
      **REBOOT**
 
-   ### Ubuntu
+   - #### Ubuntu
 
-       sudo apt-get install linux-headers-generic build-essential git libelf-dev
+         sudo apt-get install linux-headers-generic build-essential git libelf-dev
 
    ## 2. Clone and Install
 
