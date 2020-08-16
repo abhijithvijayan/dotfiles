@@ -79,7 +79,7 @@
     ```
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
 
-    nvm download 12
+    nvm install 12
     nvm alias default 12
     ```
 
