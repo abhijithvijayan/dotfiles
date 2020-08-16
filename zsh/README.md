@@ -74,6 +74,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.
 ### Install powerline-fonts
 
 ```
+# ubuntu
 sudo apt-get install fonts-powerline -y
 ```
 
@@ -92,6 +93,7 @@ sudo fc-cache -f -v
 ### Install ruby
 
 ```
+# ubuntu
 sudo apt install ruby-full -y
 ```
 
