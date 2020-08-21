@@ -1,5 +1,12 @@
 ## Packages
 
+- #### Fixing keyring importing error
+    ```
+    sudo cp /etc/pacman.d/gnupg/gpg.conf ~/.gnupg/gpg.conf
+    echo "keyserver hkp://pool.sks-keyservers.net" | sudo tee -a /etc/pacman.d/gnupg/gpg.conf
+    ```
+    Restart shell
+
 - #### Synchronizing package databases
 
     ```
