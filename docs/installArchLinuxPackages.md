@@ -182,6 +182,7 @@ yay -S ttf-ubuntu-font-family
 # emoji support
 sudo ./emoji.sh
 ```
+[emoji.sh](https://github.com/abhijithvijayan/dotfiles/blob/master/emoji.sh)
 
 ## Shortcuts
 
