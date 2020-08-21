@@ -186,7 +186,7 @@ sudo ./emoji.sh
 
 ## Shortcuts
 
-1. Go to `System Settings -> Shortcuts`
+1. Go to `System Settings -> Shortcuts -> Global Shortcuts` (Search by item)
 2.
        - `Walk Through Desktops` to `Meta + Tab`
        - `Walk Through Desktops(Reverse)` to `Meta + Shift + Tab`
