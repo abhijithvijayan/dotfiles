@@ -191,7 +191,7 @@ sudo ./emoji.sh
        - `Walk Through Desktops` to `Meta + Tab`
        - `Walk Through Desktops(Reverse)` to `Meta + Shift + Tab`
        - `Toggle Present Windows(All Desktops)` to `Meta + Ctrl + Up`
-       - `Activate Application Menu Widget` to `Ctrl + F10`
+       - `Activate Application Launcher Widget` to `Ctrl + F10`
        - `Switch to Next Desktop` to `Meta + Ctrl + Right`
        - `Switch to Previous Desktop` to `Meta + Ctrl + Left`
        - `Show Desktop Grid` to `Meta + Ctrl + Down`
