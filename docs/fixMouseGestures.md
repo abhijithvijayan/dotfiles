@@ -84,16 +84,17 @@ libinput-gestures-setup autostart
 libinput-gestures-setup start
 ```
 
+#### Disabling middleclick gesture
+```
+synclient TapButton3=0
+```
+<https://github.com/bulletmark/libinput-gestures/issues/112#issuecomment-356352149>
+
 <hr />
 
 References:
 
 <https://askubuntu.com/a/1035863>
 
-<https://github.com/bulletmark/libinput-gestures/issues/112#issuecomment-356352149>
-
 <https://github.com/bulletmark/libinput-gestures>
 
-```
-
-```
