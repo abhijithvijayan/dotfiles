@@ -9,6 +9,7 @@ yay -S hddtemp hddtemp psensor
 ```
 ```
 sudo sensors-detect
+# ubuntu
 sudo service module-init-tools restart
 sensors
 ```
