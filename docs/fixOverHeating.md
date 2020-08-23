@@ -1,12 +1,15 @@
 ## Calibrate
 
 ```
+# Ubuntu
 sudo apt install lm-sensors hddtemp psensor
 
+# Arch
+yay -S hddtemp hddtemp psensor
+```
+```
 sudo sensors-detect
-
 sudo service module-init-tools restart
-
 sensors
 ```
 
