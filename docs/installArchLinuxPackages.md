@@ -201,6 +201,7 @@ sudo ./emoji.sh
        - `Launch Spectacle` to `Ctrl + Shift + Print`
        - `Capture Active Window` to `Meta + Print`
        - `Capture Entire Desktop` to `Print`
-       - `Capture Rectangular Region` to `Shift Print` 
+       - `Capture Rectangular Region` to `Shift + Print` 
+       - `Launch Konsole` to `Alt + Ctrl + T`
 3. Disable 2 Finger vertical scroll(switching workspace) on desktop
    - Right click on the desktop, click `configure desktop`, then `Mouse Actions`, then remove the one that says `vertical scroll` by pressing the minus on the right of that row.
