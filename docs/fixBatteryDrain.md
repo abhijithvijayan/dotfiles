@@ -3,8 +3,13 @@
 ### Prolong battery life and prevent overheating
 
 ```
+# Ubuntu
 sudo apt install tlp tlp-rdw
 sudo tlp start
+
+# Arch
+yay -S tlp
+yay -S tlp-rdw
 ```
 
 ### Enable ALPM
