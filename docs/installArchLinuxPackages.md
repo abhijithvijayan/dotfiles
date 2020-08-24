@@ -174,6 +174,12 @@
     yay -S ncurses5-compat-libs
     ```
 
+- #### Latte Dock
+
+    ```
+    a
+    ```
+    
 ## Fonts
 
 ```
