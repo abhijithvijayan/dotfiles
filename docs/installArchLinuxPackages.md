@@ -95,7 +95,15 @@
     ```
     yay -S yarn
     ```
-
+- #### postgresql
+    ```
+    sudo pacman -S postgresql
+    sudo su - postgres
+    initdb --locale en_US.UTF-8 -D /var/lib/postgres/data
+    sudo systemctl start postgresql
+    sudo -u postgres createuser --interactive
+    ```
+    
 - #### tree
 
     ```
