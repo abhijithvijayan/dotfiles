@@ -50,6 +50,12 @@
     ```
     yay -S ruby
     ```
+    
+- #### nomacs image viewer
+
+    ```
+    yay -S nomacs
+    ```
 
 - #### FileZilla
 
