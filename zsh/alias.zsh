@@ -139,6 +139,7 @@ alias pscpu='ps auxf | sort -nr -k 3'
 alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
 ## Get server cpu info ##
 alias cpuinfo='lscpu'
+alias cpufreq='watch -n 0 grep \"cpu MHz\" /proc/cpuinfo'
 
 # general
 alias pb='pbcopy'
@@ -157,8 +158,6 @@ alias q='exit'
 alias screen='screenfetch'
 alias mx='chmod +x'
 alias rr='rm -rf'
-alias apt-get='sudo apt-get'
-alias upgrade='sudo apt-get update && sudo apt-get upgrade'
 
 # Add safety nets
 # do not delete / or prompt if deleting more than 3 files at a time #
