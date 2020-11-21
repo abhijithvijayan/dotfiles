@@ -5,6 +5,9 @@
 # Flutter
 export PATH="$PATH:$HOME/flutter/bin"
 
+# Webstorm
+export PATH="$PATH:$HOME/Webstorm/bin"
+
 # Android Studio
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
