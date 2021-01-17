@@ -4,6 +4,8 @@
 
 module.exports = {
     config: {
+        // choose either `'stable'` for receiving highly polished,
+        // or `'canary'` for less polished but more frequent updates
         updateChannel: 'stable',
 
         // default font size in pixels for all tabs
@@ -67,6 +69,9 @@ module.exports = {
         // custom padding (CSS format, i.e.: `top right bottom left`)
         padding: '12px 14px',
 
+        // the full list. if you're going to provide the full color palette,
+        // including the 6 x 6 color cubes and the grayscale map, just provide
+        // an array here instead of a color map object
         colors: {
             black: '#000000',
             red: '#ff0000',
@@ -86,11 +91,22 @@ module.exports = {
             lightWhite: '#ffffff',
         },
 
-        // the shell to run when spawning a new session 
+        // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
         // if left empty, your system's login shell will be used by default
+        //
+        // Windows
+        // - Make sure to use a full path if the binary name doesn't work
+        // - Remove `--login` in shellArgs
+        //
+        // Bash on Windows
+        // - Example: `C:\\Windows\\System32\\bash.exe`
+        //
+        // PowerShell on Windows
+        // - Example: `C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe`
         shell: '/usr/bin/zsh',
 
-        // for setting shell arguments 
+        // for setting shell arguments (i.e. for using interactive shellArgs: `['-i']`)
+        // by default `['--login']` will be used
         shellArgs: ['--login'],
 
         // for environment variables
@@ -99,20 +115,29 @@ module.exports = {
         // set to `false` for no bell
         bell: false,
 
-        // if `true` selected text will automatically be copied to the clipboard
+        // if `true` (without backticks and without quotes), selected text will automatically be copied to the clipboard
         copyOnSelect: false,
 
-        // if `true` hyper will be set as the default protocol client for SSH
+        // if `true` (without backticks and without quotes), hyper will be set as the default protocol client for SSH
         defaultSSHApp: true,
 
-        // if `true` on right click selected text will be copied or pasted if no
-        // selection is present
+        // if `true` (without backticks and without quotes), on right click selected text will be copied or pasted if no
+        // selection is present (`true` by default on Windows and disables the context menu feature)
         quickEdit: false,
 
         // The number of rows to be persisted in terminal buffer for scrolling
         scrollback: 10000,
 
-        // Whether to use the WebGL renderer.
+        // choose either `'vertical'`, if you want the column mode when Option key is hold during selection (Default)
+        // or `'force'`, if you want to force selection regardless of whether the terminal is in mouse events mode
+        // (inside tmux or vim with mouse mode enabled for example).
+        macOptionSelectionMode: 'vertical',
+
+        // URL to custom bell
+        // bellSoundURL: 'http://example.com/bell.mp3',
+
+        // Whether to use the WebGL renderer. Set it to false to use canvas-based
+        // rendering (slower, but supports transparent backgrounds)
         webGLRenderer: true,
 
         hyperBorder: {
@@ -122,6 +147,7 @@ module.exports = {
             borderColors: 'rgba(28,35,65, 0.5)'
         },
 
+        // for advanced config flags please refer to https://hyper.is/#cfg
     },
 
     // a list of plugins to fetch and install from npm
