@@ -9,6 +9,9 @@ fpath=($fpath "/home/${USER}/.zfunctions")
 autoload -U promptinit; promptinit
 prompt spaceship
 
+# Activate zsh-autosuggestions plugin
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # Add colors to terminal commands (green command means that the command is valid)
 source /usr/local/share/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
