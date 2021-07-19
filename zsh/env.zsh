@@ -2,10 +2,6 @@
 #  Shell Variables
 #-------------------
 
-# Specify VS Code as default editor for the React Native Simulator
-export REACT_EDITOR=code
-# Set VS Code Insiders as default code editor
-export EDITOR=code
 # NPM Global Path
 export PATH="/home/${USER}/.npm-global/bin:$PATH"
 # Color
