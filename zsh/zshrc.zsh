@@ -1,5 +1,6 @@
 source ~/.dotfiles/zsh/env.zsh
 source ~/.dotfiles/zsh/path.zsh
+source ~/.dotfiles/zsh/others.zsh
 source ~/.dotfiles/zsh/hooks.zsh
 source ~/.dotfiles/zsh/options.zsh
 source ~/.dotfiles/zsh/functions/functions.zsh
@@ -7,4 +8,3 @@ source ~/.dotfiles/zsh/functions/git-functions.zsh
 source ~/.dotfiles/zsh/bindings.zsh
 source ~/.dotfiles/zsh/locale.zsh
 source ~/.dotfiles/zsh/alias.zsh
-source ~/.dotfiles/zsh/others.zsh
