@@ -44,7 +44,7 @@ sudo chmod 755 /usr/local/share/zsh/site-functions
 ```
 npm install -g spaceship-prompt
 
-git clone https://github.com/denysdovhan/spaceship-prompt.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/spaceship-prompt
+git clone --depth=1 https://github.com/spaceship-prompt/spaceship-prompt.git "$HOME/.zsh/spaceship"
 
 ln -s ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/spaceship-prompt/spaceship.zsh-theme ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/spaceship.zsh-theme
 ```
@@ -64,7 +64,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git /usr/local/sh
 ### 3. Auto-Suggestion
 
 ```
-git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions.git /usr/local/share/zsh/zsh-autosuggestions
 ```
 
 <hr />

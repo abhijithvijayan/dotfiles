@@ -108,10 +108,10 @@ ggs() {
 }
 
 # Write quick commit message. gc <commit-msg>
-gc() {
-    git commit -m "$*"
-    #set -x; git commit -m "$*"; set +x;
-}
+# gc() {
+#     git commit -m "$*"
+#     #set -x; git commit -m "$*"; set +x;
+# }
 
 # cd to root of .git project
 groot() {

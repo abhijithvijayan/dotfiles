@@ -24,4 +24,7 @@ export PATH=$PATH:/usr/local/share/
 PATH="$PATH:$(ruby -e 'puts Gem.user_dir')/bin"
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/${USER}/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
+
+# Path to homebrew
+export PATH=/opt/homebrew/bin:$PATH
