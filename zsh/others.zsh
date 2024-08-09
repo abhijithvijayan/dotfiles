@@ -9,9 +9,10 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 fpath=($fpath "$HOME/.zfunctions")
 
 # Set Spaceship/Pure ZSH as a prompt
-source "$HOME/.zsh/spaceship/spaceship.zsh"
-autoload -U promptinit; promptinit
-prompt spaceship
+ZSH_THEME="spaceship"
+#source "$HOME/.zsh/spaceship/spaceship.zsh"
+#autoload -U promptinit; promptinit
+#prompt spaceship
 
 # Google Cloud SDK setup
 if [ -f "$HOME/workspace/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/workspace/google-cloud-sdk/path.zsh.inc"; fi
@@ -19,9 +20,6 @@ if [ -f "$HOME/workspace/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/workspa
 # Enable shell command completion for gcloud
 if [ -f "$HOME/workspace/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/workspace/google-cloud-sdk/completion.zsh.inc"; fi
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
-
-# Load Angular CLI autocompletion.
-source <(ng completion script)
 
 # Anaconda setup
 # >>> conda initialize >>>

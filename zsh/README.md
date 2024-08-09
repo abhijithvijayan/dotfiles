@@ -42,9 +42,9 @@ sudo chmod 755 /usr/local/share/zsh/site-functions
 ### 1. Spaceship-prompt
 
 ```
-git clone --depth=1 https://github.com/spaceship-prompt/spaceship-prompt.git "$HOME/.zsh/spaceship"
+git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
 
-ln -s ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/spaceship-prompt/spaceship.zsh-theme ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/spaceship.zsh-theme
+ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 ```
 
 <hr />
@@ -74,6 +74,9 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 ```
 # ubuntu
 sudo apt-get install fonts-powerline -y
+
+# mac
+brew install font-hack-nerd-font
 ```
 
 ### Install Meslo patched font
@@ -88,6 +91,8 @@ unzip "Meslo.zip" "*.ttf" "*.otf" -d ~/.local/share/fonts
 sudo fc-cache -f -v
 ```
 
+### Note for iTerm2 users - Please enable the Nerd Font at iTerm2 > Preferences > Profiles > Text > Non-ASCII font > Hack Regular Nerd Font Complete.
+
 ### Install ruby
 
 ```
@@ -95,6 +100,7 @@ sudo fc-cache -f -v
 sudo apt install ruby-full -y
 
 # mac
+# https://mac.install.guide/faq/check-ruby-version/
 brew install ruby
 ```
 
@@ -103,7 +109,7 @@ brew install ruby
 https://github.com/athityakumar/colorls#installation
 
 ```
-sudo gem install colorls
+sudo gem install colorls --user-install
 mkdir ~/.config/colorls
 
 # See dark_colors.yaml for config
