@@ -15,7 +15,7 @@
 
 > https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH#how-to-install-zsh-on-many-platforms
 
-Set ZSH as default shell
+Set ZSH as default shell(check which shell with `which $SHELL` command)
 
 ```
 chsh -s /bin/zsh
@@ -24,12 +24,12 @@ chsh -s /bin/zsh
 ### Install oh-my-zsh
 
 ```
-sh -c "$(wget -O- https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 `# See dotfiles/zsh file for config`
 
-### Fix Permissions (Critical)
+### Fix Permissions for Linux (Critical)
 
 ```
 sudo chown -R $USER /usr/local
@@ -42,8 +42,6 @@ sudo chmod 755 /usr/local/share/zsh/site-functions
 ### 1. Spaceship-prompt
 
 ```
-npm install -g spaceship-prompt
-
 git clone --depth=1 https://github.com/spaceship-prompt/spaceship-prompt.git "$HOME/.zsh/spaceship"
 
 ln -s ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/spaceship-prompt/spaceship.zsh-theme ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/spaceship.zsh-theme
@@ -58,13 +56,13 @@ https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
 #### Note: if the zsh folder does not exists in /usr/local/share, just create it
 
 ```
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git /usr/local/share/zsh/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
 ### 3. Auto-Suggestion
 
 ```
-git clone https://github.com/zsh-users/zsh-autosuggestions.git /usr/local/share/zsh/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
 <hr />
@@ -95,6 +93,9 @@ sudo fc-cache -f -v
 ```
 # ubuntu
 sudo apt install ruby-full -y
+
+# mac
+brew install ruby
 ```
 
 ### Install Colorls
@@ -108,6 +109,7 @@ mkdir ~/.config/colorls
 # See dark_colors.yaml for config
 touch ~/.config/colorls/dark_colors.yaml
 ```
+Copy contents to the created file
 > [dark_colors.yaml](https://github.com/abhijithvijayan/dotfiles/blob/master/hyper/dark_colors.yaml)
 
 ### Apply shell configuration (Critical)

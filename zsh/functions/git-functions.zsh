@@ -141,8 +141,8 @@ gao() {
     git remote add origin "$(pbpaste)"
 }
 
-# git clone and cd instantly to cloned repo. gcd <git-url>
-gcd() {
+# git clone and cd instantly to cloned repo. gcl <git-url>
+gclone() {
    git clone "$(pbpaste)" && cd "${1##*/}"
 }
 

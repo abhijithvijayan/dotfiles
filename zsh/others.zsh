@@ -2,6 +2,9 @@
 #   Miscellaneous
 #-------------------
 
+# Load Homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # User configuration
 fpath=($fpath "$HOME/.zfunctions")
 
@@ -10,11 +13,15 @@ source "$HOME/.zsh/spaceship/spaceship.zsh"
 autoload -U promptinit; promptinit
 prompt spaceship
 
-# Activate zsh-autosuggestions plugin
-source /usr/local/share/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+# Google Cloud SDK setup
+if [ -f "$HOME/workspace/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/workspace/google-cloud-sdk/path.zsh.inc"; fi
 
-# Add colors to terminal commands (green command means that the command is valid)
-source /usr/local/share/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# Enable shell command completion for gcloud
+if [ -f "$HOME/workspace/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/workspace/google-cloud-sdk/completion.zsh.inc"; fi
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
 
 # Anaconda setup
 # >>> conda initialize >>>

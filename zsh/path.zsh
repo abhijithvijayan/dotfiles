@@ -20,6 +20,9 @@ export PATH="/usr/local/opt/postgresql@12/bin:$PATH"
 # Chrome web driver
 export PATH=$PATH:/usr/local/share/
 
+# Ruby
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+
 # Allow RubyGems to be executed
 PATH="$PATH:$(ruby -e 'puts Gem.user_dir')/bin"
 
@@ -28,3 +31,4 @@ export ZSH="$HOME/.oh-my-zsh"
 
 # Path to homebrew
 export PATH=/opt/homebrew/bin:$PATH
+

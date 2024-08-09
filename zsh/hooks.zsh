@@ -2,8 +2,8 @@
 #     Zsh hooks
 #-------------------
 
-plugins=(git)
-plugins=(zsh-autosuggestions)
+# plugins to load
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
